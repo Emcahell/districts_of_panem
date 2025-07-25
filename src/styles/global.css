@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+@theme {
+  --color-background: var(--background);
+  --color-white-text: var(--white-text);
+  --color-dorado-panem: var(--dorado-panem);
+}
+
+:root {
+  --background: #0e0d0d;
+  --white-text: #f2f2f2;
+  --dorado-panem: #efc43b;
+}
+
+@font-face {
+  font-family: 'bunken-tech-sans-sc-wide';
+  src: url('../assets/font/bunken-tech-sans-sc-wide.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+.font-family-bunken-tech {
+  font-family: 'bunken-tech-sans-sc-wide';
+}
+
+.font-family-secondary {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

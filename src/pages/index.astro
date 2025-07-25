@@ -1,0 +1,88 @@
+---
+import MapPanem from '../assets/images/map-of-panem.jpg';
+import ImgCapitol from '../assets/images/capitol/The_Capitol_Seal.webp';
+import ImgDistrict1 from '../assets/images/d1/District_1_Seal.webp';
+import ImgDistrict2 from '../assets/images/d2/District_2_Seal.webp';
+import ImgDistrict3 from '../assets/images/d3/District_3_Seal.webp';
+import ImgDistrict4 from '../assets/images/d4/District_4_Seal.webp';
+import ImgDistrict5 from '../assets/images/d5/District_5_Seal.webp';
+import ImgDistrict6 from '../assets/images/d6/District_6_Seal.webp';
+import ImgDistrict7 from '../assets/images/d7/District_7_Seal.webp';
+import ImgDistrict8 from '../assets/images/d8/District_8_Seal.webp';
+import ImgDistrict9 from '../assets/images/d9/District_9_Seal.webp';
+import ImgDistrict10 from '../assets/images/d10/District_10_Seal.webp';
+import ImgDistrict11 from '../assets/images/d11/District_11_Seal.webp';
+import ImgDistrict12 from '../assets/images/d12/District_12_Seal.webp';
+
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout>
+	<main class="w-full h-screen md:px-8 overflow-hidden">
+
+		<header class="bg-background py-6 px-8">
+			<div class="text-white-text/90 text-sm font-family-secondary">
+				<p>Districts of Panem by <a href="https://github.com/emcahell">Emcahell</a></p>
+			</div>
+
+			<div></div>
+		</header>
+
+		<section class="relative w-full">
+			<h1 class="text-white-text font-semibold font-family-bunken-tech text-center text-4xl sm:text-6xl mt-6 md:mt-16">Districts of Panem</h1>
+			<div>
+				<img src={MapPanem.src} alt="Map of Panem" class="absolute -top-38 md:-top-45 bg-cover opacity-40 mask-b-from-14% md:mask-b-from-40% mask-l-from-85% mask-r-from-85% -z-10" >
+			</div>
+			<div class="relative flex flex-col items-center gap-6 sm:gap-8 md:gap-10 w-full mt-24 sm:mt-20 px-8">
+				<a href="#">
+					<img src={ImgCapitol.src} alt="Capitol" class="absolute top-16 md:-top-50 md:left-12 opacity-10 w-[320px]">
+					</a>
+				<div class="flex justify-center gap-6 sm:gap-8 md:gap-10 flex-wrap">
+				<a href="#">
+					<img src={ImgDistrict1.src} alt="District 1" class="w-[90px] sm:w-[100px] drop-shadow-lg drop-shadow-gray-950 hover:scale-150 transition">
+				</a>
+				<a href="#">
+					<img src={ImgDistrict2.src} alt="District 2" class="w-[90px] sm:w-[100px] drop-shadow-lg drop-shadow-gray-950 hover:scale-150 transition">
+				</a>
+				<a href="#">
+					<img src={ImgDistrict3.src} alt="District 3" class="w-[90px] sm:w-[100px] drop-shadow-lg drop-shadow-gray-950 hover:scale-150 transition">
+				</a>
+				<a href="#">
+					<img src={ImgDistrict4.src} alt="District 4" class="w-[90px] sm:w-[100px] drop-shadow-lg drop-shadow-gray-950 hover:scale-150 transition">
+				</a>
+				<a href="#">
+					<img src={ImgDistrict5.src} alt="District 5" class="w-[90px] sm:w-[100px] drop-shadow-lg drop-shadow-gray-950 hover:scale-150 transition">
+				</a>
+				<a href="#">
+					<img src={ImgDistrict6.src} alt="District 6" class="w-[90px] sm:w-[100px] drop-shadow-lg drop-shadow-gray-950 hover:scale-150 transition">
+				</a>
+			</div>
+			<div class="flex justify-center flex-wrap gap-6 sm:gap-8 md:gap-10">
+				<a href="#">
+					<img src={ImgDistrict7.src} alt="District 7" class="w-[90px] sm:w-[100px] drop-shadow-lg drop-shadow-gray-950 hover:scale-150 transition">
+				</a>
+				<a href="#">
+					<img src={ImgDistrict8.src} alt="District 8" class="w-[90px] sm:w-[100px] drop-shadow-lg drop-shadow-gray-950 hover:scale-150 transition">
+				</a>
+				<a href="#">
+					<img src={ImgDistrict9.src} alt="District 9" class="w-[90px] sm:w-[100px] drop-shadow-lg drop-shadow-gray-950 hover:scale-150 transition">
+				</a>
+				<a href="#">
+					<img src={ImgDistrict10.src} alt="District 10" class="w-[90px] sm:w-[100px] drop-shadow-lg drop-shadow-gray-950 hover:scale-150 transition">
+				</a>
+				<a href="#">
+					<img src={ImgDistrict11.src} alt="District 11" class="w-[90px] sm:w-[100px] drop-shadow-lg drop-shadow-gray-950 hover:scale-150 transition">
+				</a>
+				<a href="#">
+					<img src={ImgDistrict12.src} alt="District 12" class="w-[90px] sm:w-[100px] drop-shadow-lg drop-shadow-gray-950 hover:scale-150 transition">
+				</a>
+				</div>
+			</div>
+		</section>
+
+		<footer class="fixed bottom-2 w-full text-white-text/90">
+			<p class="w-full text-center text-sm font-family-secondary">Click on the district's coat of arms to learn more about it.</p>
+		</footer>
+
+	</main>
+</Layout>
