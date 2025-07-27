@@ -3,13 +3,13 @@
 @theme {
   --color-background: var(--background);
   --color-white-text: var(--white-text);
-  --color-dorado-panem: var(--dorado-panem);
+  --color-dorado: var(--dorado);
 }
 
 :root {
   --background: #0e0d0d;
   --white-text: #f2f2f2;
-  --dorado-panem: #efc43b;
+  --dorado: #efc43b;
 }
 
 @font-face {

@@ -1,0 +1,100 @@
+---
+import SealDistrict from '../assets/images/d1/District_1_Seal.webp';
+import ImgLocation from '../assets/images/d1/District_1_on_Map.webp';
+import ImgIndustry from '../assets/images/d1/luxury.jpg';
+import ImgPalladium from '../assets/images/d1/Palladium_Barker.webp';
+import ImgGloss from '../assets/images/d1/Gloss.webp';
+import ImgCashmere from '../assets/images/d1/Cashmere.webp';
+
+import Layout from "../layouts/Layout.astro";
+import Footer from '../components/Footer.astro';
+---
+
+<Layout>
+  <main class="px-20">
+    <header class="fixed top-0 right-0 left-0 flex justify-between items-center w-full bg-background/80 py-6 px-20 backdrop-blur-md border-b-2 border-gray-800/80">
+      <h1 class="text-dorado font-semibold font-family-bunken-tech text-6xl drop-shadow-lg">District 1</h1>
+      <a href="/" class="flex gap-4 text-white-text hover:text-dorado font-semibold font-family-secondary">
+        <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+        <path d="M15 6l-6 6l6 6" />
+        </svg>
+        Back Home
+      </a>
+    </header>
+
+    <section class="w-full flex justify-center mt-42 mb-12">
+      <div>
+        <img src={SealDistrict.src} alt="District 1" class="w-[400px]">
+      </div>
+    </section>
+
+    <section>
+      <div class="flex items-center py-12">
+        <div>
+          <p class="text-white-text text-2xl font-bold font-family-secondary mb-4">Location</p>
+          <p class="text-white-text/90 text-lg font-family-secondary w-[70%]">District 1 is located in western North America, to the northwest of Panem along the Rocky Mountains. Geographically, District 1's territory is primarily centered around the U.S. states of Montana, Idaho, Utah, and Wyoming. District 1 borders four districts as well as the Capitol: District 4 (to the west), District 7 (to the north), District 9 (to the east), the Capitol (to the southeast), and District 5 (to the south).</p>
+        </div>
+        <div>
+          <img src={ImgLocation.src} alt="district location" class="w-[800px] rounded-lg">
+        </div>
+      </div>
+      <div class="w-full flex justify-between items-center py-12">
+        <div>
+          <img src={ImgIndustry.src} alt="district industry" class="w-[400px]! rounded-lg">
+        </div>
+        <div class="text-end w-full">
+          <p class="text-white-text  text-2xl font-bold font-family-secondary mb-4">Industry</p>
+          <p class="text-white-text/90 text-lg font-family-secondary pl-44">They were in charge of producing luxury items for the Capitol. Around the time of the 10th Hunger Games, they produced items such as decent liquor, makeup, and tobacco, though they were often hard to get ahold of and very expensive, which made the black market in the Capitol flourish.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="mt-26">
+      <h3 class="text-white-text font-semibold text-4xl">Victors</h3>
+      <article class="flex flex-col gap-16 mt-18">
+        <div class="flex items-center gap-6">  
+          <div class="w-[100px] h-[100px] rounded-full overflow-hidden">
+            <img src={ImgPalladium.src} alt="Palladium" class="w-[100px] object-cover">
+          </div>
+          <div>
+            <p class="text-white-text text-2xl font-semibold mb-2">Palladium Barker</p>
+            <p class="text-white-text/90">Victor of the 46th Hunger Game</p>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-6">
+          <div>
+            <img src={ImgGloss.src} alt="Gloss" class="w-[100px] rounded-full">
+          </div>
+          <div>
+            <p class="text-white-text text-2xl font-semibold mb-2">Gloss</p>
+            <p class="text-white-text/90">Victor of the 63rd Hunger Games</p>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-6">
+          <div class="w-[100px] h-[100px] rounded-full overflow-hidden">
+            <img src={ImgCashmere.src} alt="Cashmere" class="w-[100px] rounded-full">
+          </div>
+          <div>
+            <p class="text-white-text text-2xl font-semibold mb-2">Cashmere</p>
+            <p class="text-white-text/90">Victor of the 64th Hunger Games</p>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <Footer />
+  </main>
+</Layout>
