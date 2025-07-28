@@ -1,0 +1,73 @@
+---
+import SealDistrict from '../assets/images/d7/District_7_Seal.webp';
+import ImgLocation from '../assets/images/d7/District_7_on_Map.webp';
+import ImgIndustry from '../assets/images/d7/lumber.jpg';
+import ImgFemaleVictor from '../assets/images/d7/Johanna.webp';
+import ImgMaleVictor from '../assets/images/d7/Blight.webp';
+import ImgDistrict from '../assets/images/d7/District_7_peacekeepers.webp';
+
+import Layout from "../layouts/Layout.astro";
+import Footer from '../components/Footer.astro';
+import Header from '../components/Header.astro';
+---
+
+<Layout title='District 7'>
+  <main class="px-20  overflow-hidden">
+    <Header titleHeader='District 7' />
+
+    <section class="relative w-full flex justify-center mt-42 mb-12">
+      <div>
+        <img src={SealDistrict.src} alt="District 1" class="w-[400px]">
+      </div>
+      <img src={ImgDistrict.src} alt="District 2" class="absolute top-0 -right-24 w-[560px] opacity-40 rounded-lg -z-10">
+    </section>
+
+    <section>
+      <div class="flex items-center py-12">
+        <div>
+          <p class="text-white-text text-2xl font-bold font-family-secondary mb-4">Location</p>
+          <p class="text-white-text/90 text-lg font-family-secondary w-[70%]">District 7 is located in the Pacific Northwest, also known as Cascadia. Its territory primarily covers the Canadian provinces of British Columbia, Alberta, and Saskatchewan, as well as the U.S. states of Montana and Washington. According to this map, it is one of the few districts primarily located outside the contiguous United States, alongside District 13 and District 10. It borders District 4 (to the southwest), District 1 (to the south and southeast), and District 9 (to the east).</p>
+        </div>
+        <div>
+          <img src={ImgLocation.src} alt="district location" class="w-[900px] rounded-lg">
+        </div>
+      </div>
+      <div class="w-full flex justify-between items-center py-12">
+        <div>
+          <img src={ImgIndustry.src} alt="district industry" class="w-[400px]! rounded-lg">
+        </div>
+        <div class="text-end w-full">
+          <p class="text-white-text  text-2xl font-bold font-family-secondary mb-4">Industry</p>
+          <p class="text-white-text/90 text-lg font-family-secondary pl-44">District 7 provided lumber and paper to the Capitol. Nothing is mentioned about the typical lives of citizens. However, Katniss noted Johanna's skill with axes, and she mused that Johanna had probably been handling them since she was a toddler. If that is the case, it seems that citizens from District 7 began working in their district's lumber industry at an early age. Both Lamina and Treech also handled axes during the 10th Hunger Games, appearing to support Katniss's theory.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="mt-26">
+      <h3 class="text-white-text font-semibold text-4xl">Victors</h3>
+      <article class="flex flex-col gap-16 mt-18">
+        <div class="flex items-center gap-6">  
+          <div class="w-[100px] h-[100px] rounded-full overflow-hidden bg-gray-800">
+            <img src={ImgFemaleVictor.src} alt="Brutus" class="w-[100px] object-cover">
+          </div>
+          <div>
+            <p class="text-white-text text-2xl font-semibold mb-2">Johanna Mason</p>
+            <p class="text-white-text/90"> Victor of the 71st Hunger Games</p>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-6">
+          <div class="w-[100px] h-[100px] rounded-full overflow-hidden">
+            <img src={ImgMaleVictor.src} alt="Enobaria" class="w-[100px] rounded-full">
+          </div>
+          <div>
+            <p class="text-white-text text-2xl font-semibold mb-2">Blight</p>
+            <p class="text-white-text/90">Victor of an unknown Games</p>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <Footer />
+  </main>
+</Layout>
