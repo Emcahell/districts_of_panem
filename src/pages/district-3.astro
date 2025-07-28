@@ -1,0 +1,73 @@
+---
+import SealDistrict from '../assets/images/d3/District_3_Seal.webp';
+import ImgLocation from '../assets/images/d3/District_3_on_Map.webp';
+import ImgIndustry from '../assets/images/d3/technology.jpg';
+import ImgBeetee from '../assets/images/d3/Beetee.webp';
+import ImgWiress from '../assets/images/d3/Wiress.webp';
+import ImgDistrict from '../assets/images/d3/district_3_victory.webp';
+
+import Layout from "../layouts/Layout.astro";
+import Footer from '../components/Footer.astro';
+import Header from '../components/Header.astro';
+---
+
+<Layout title='District 3'>
+  <main class="px-20  overflow-hidden">
+    <Header titleHeader='District 3' />
+
+    <section class="relative w-full flex justify-center mt-42 mb-12">
+      <div>
+        <img src={SealDistrict.src} alt="District 1" class="w-[400px]">
+      </div>
+      <img src={ImgDistrict.src} alt="District 2" class="absolute top-0 -right-24 w-[560px] opacity-40 rounded-lg -z-10">
+    </section>
+
+    <section>
+      <div class="flex items-center py-12">
+        <div>
+          <p class="text-white-text text-2xl font-bold font-family-secondary mb-4">Location</p>
+          <p class="text-white-text/90 text-lg font-family-secondary w-[70%]">District 3 is located in the eastern part of the continent, centered around the states of Illinois, Indiana, Iowa, and Minnesota. It is bordered by Districts 12 (to the east), 8 (to the south), 9 (to the west), and 6 (to the north).</p>
+        </div>
+        <div>
+          <img src={ImgLocation.src} alt="district location" class="w-[500px] rounded-lg">
+        </div>
+      </div>
+      <div class="w-full flex justify-between items-center py-12">
+        <div>
+          <img src={ImgIndustry.src} alt="district industry" class="w-[400px]! rounded-lg">
+        </div>
+        <div class="text-end w-full">
+          <p class="text-white-text  text-2xl font-bold font-family-secondary mb-4">Industry</p>
+          <p class="text-white-text/90 text-lg font-family-secondary pl-44">The district contains many factories for the production of electronic devices. Children in District 3 learn audio editing techniques in school, and tributes appear to have practical skills with wiring and programming various electronic devices. This makes it likely that they, unlike children in District 12, are expected to work in their district's industry before they turn 18. Additionally, despite District 6 being the district responsible for transportation, Katniss mentions that District 3 manufactures automobiles.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="mt-26">
+      <h3 class="text-white-text font-semibold text-4xl">Victors</h3>
+      <article class="flex flex-col gap-16 mt-18">
+        <div class="flex items-center gap-6">  
+          <div class="w-[100px] h-[100px] rounded-full overflow-hidden bg-gray-800">
+            <img src={ImgBeetee.src} alt="Brutus" class="w-[100px] object-center">
+          </div>
+          <div>
+            <p class="text-white-text text-2xl font-semibold mb-2">Beetee Latier</p>
+            <p class="text-white-text/90">Victor of the 34th Hunger Games</p>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-6">
+          <div class="w-[100px] h-[100px] rounded-full overflow-hidden">
+            <img src={ImgWiress.src} alt="Enobaria" class="w-[100px] rounded-full">
+          </div>
+          <div>
+            <p class="text-white-text text-2xl font-semibold mb-2">Wiress</p>
+            <p class="text-white-text/90">Victor of the 49th Hunger Games</p>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <Footer />
+  </main>
+</Layout>
