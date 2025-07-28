@@ -1,0 +1,73 @@
+---
+import SealDistrict from '../assets/images/d5/District_5_Seal.webp';
+import ImgLocation from '../assets/images/d5/District_5_on_Map.webp';
+import ImgIndustry from '../assets/images/d5/power.jpeg';
+import ImgFemaleVictor from '../assets/images/d5/d5_female_victor.webp';
+import ImgMaleVictor from '../assets/images/d5/d5_male_victor.webp';
+import ImgDistrict from '../assets/images/d5/presa_district_5.webp';
+
+import Layout from "../layouts/Layout.astro";
+import Footer from '../components/Footer.astro';
+import Header from '../components/Header.astro';
+---
+
+<Layout title='District 5'>
+  <main class="px-20  overflow-hidden">
+    <Header titleHeader='District 5' />
+
+    <section class="relative w-full flex justify-center mt-42 mb-12">
+      <div>
+        <img src={SealDistrict.src} alt="District 1" class="w-[400px]">
+      </div>
+      <img src={ImgDistrict.src} alt="District 2" class="absolute top-0 -right-24 w-[560px] opacity-40 rounded-lg -z-10">
+    </section>
+
+    <section>
+      <div class="flex items-center py-12">
+        <div>
+          <p class="text-white-text text-2xl font-bold font-family-secondary mb-4">Location</p>
+          <p class="text-white-text/90 text-lg font-family-secondary w-[70%]">District 5 is located directly southwest of the Capitol, primarily centered in the state of Arizona and southern Utah. This geographical location makes sense, as it would have to be located in close proximity to meet the power needs of the city. Being located around the Colorado River. District 5 borders District 4 (to the northeast), District 1 (to the north), The Capitol (to the northwest), District 2 (to the east), and District 10 (to the southeast).</p>
+        </div>
+        <div>
+          <img src={ImgLocation.src} alt="district location" class="w-[800px] rounded-lg">
+        </div>
+      </div>
+      <div class="w-full flex justify-between items-center py-12">
+        <div>
+          <img src={ImgIndustry.src} alt="district industry" class="w-[400px]! rounded-lg">
+        </div>
+        <div class="text-end w-full">
+          <p class="text-white-text  text-2xl font-bold font-family-secondary mb-4">Industry</p>
+          <p class="text-white-text/90 text-lg font-family-secondary pl-44">Its main industry is power and utility, and the district is responsible for generating the power of the entire nation. The district's industry, along with District 6, are the last ones to be revealed. Nowhere in the original trilogy books suggest that District 5 provides power and utilities to the nation, unlike District 9 being the grain district. They are only revealed at the time the film adaptation of The Hunger Games has been announced. The hydroelectric dam attack in District 5 is a new addition to the Second Rebellion.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="mt-26">
+      <h3 class="text-white-text font-semibold text-4xl">Victors</h3>
+      <article class="flex flex-col gap-16 mt-18">
+        <div class="flex items-center gap-6">  
+          <div class="w-[100px] h-[100px] rounded-full overflow-hidden bg-gray-800">
+            <img src={ImgFemaleVictor.src} alt="Brutus" class="w-[100px] object-cover">
+          </div>
+          <div>
+            <p class="text-white-text text-2xl font-semibold mb-2">District 5 female</p>
+            <p class="text-white-text/90">Victor of an unspecified Hunger Games</p>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-6">
+          <div class="w-[100px] h-[100px] rounded-full overflow-hidden">
+            <img src={ImgMaleVictor.src} alt="Enobaria" class="w-[100px] rounded-full">
+          </div>
+          <div>
+            <p class="text-white-text text-2xl font-semibold mb-2">District 5 male</p>
+            <p class="text-white-text/90">Victor of an unspecified Hunger Games</p>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <Footer />
+  </main>
+</Layout>
