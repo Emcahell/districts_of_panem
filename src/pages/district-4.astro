@@ -1,0 +1,84 @@
+---
+import SealDistrict from '../assets/images/d4/District_4_Seal.webp';
+import ImgLocation from '../assets/images/d4/District_4_on_Map.webp';
+import ImgIndustry from '../assets/images/d4/fishing.jpg';
+import ImgFinnick from '../assets/images/d4/Finnick.webp';
+import ImgMags from '../assets/images/d4/Mags.webp';
+import ImgAnnie from '../assets/images/d4/Annie.webp';
+import ImgDistrict from '../assets/images/d4/district_4_victory.jpg';
+
+import Layout from "../layouts/Layout.astro";
+import Footer from '../components/Footer.astro';
+import Header from '../components/Header.astro';
+---
+
+<Layout title='District 4'>
+  <main class="px-20  overflow-hidden">
+    <Header titleHeader='District 4' />
+
+    <section class="relative w-full flex justify-center mt-42 mb-12">
+      <div>
+        <img src={SealDistrict.src} alt="District 1" class="w-[400px]">
+      </div>
+      <img src={ImgDistrict.src} alt="District 2" class="absolute top-0 -right-24 w-[560px] opacity-40 rounded-lg -z-10">
+    </section>
+
+    <section>
+      <div class="flex items-center py-12">
+        <div>
+          <p class="text-white-text text-2xl font-bold font-family-secondary mb-4">Location</p>
+          <p class="text-white-text/90 text-lg font-family-secondary w-[70%]">District 4 is located on the western coast of the continent, roughly corresponding to California and Oregon, with notable territories in Nevada and southern Washington. The district borders District 7 (to the north), District 1 (to the east), and District 5 (to the southeast).</p>
+        </div>
+        <div>
+          <img src={ImgLocation.src} alt="district location" class="w-[500px] rounded-lg">
+        </div>
+      </div>
+      <div class="w-full flex justify-between items-center py-12">
+        <div>
+          <img src={ImgIndustry.src} alt="district industry" class="w-[400px]! rounded-lg">
+        </div>
+        <div class="text-end w-full">
+          <p class="text-white-text  text-2xl font-bold font-family-secondary mb-4">Industry</p>
+          <p class="text-white-text/90 text-lg font-family-secondary pl-44">Its major industry is fishing, and children are trained for jobs in this industry from a young age. Not much is known about District 4's way of living aside from their specialization in fishing. This makes them adept at tying knots, weaving, and wielding weapons like spears and tridents. They can also make and use nets, improvise fish hooks, and identify edible marine life. Presumably, they also practice aquaculture.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="mt-26">
+      <h3 class="text-white-text font-semibold text-4xl">Victors</h3>
+      <article class="flex flex-col gap-16 mt-18">
+        <div class="flex items-center gap-6">  
+          <div class="w-[100px] h-[100px] rounded-full overflow-hidden bg-gray-800">
+            <img src={ImgFinnick.src} alt="Brutus" class="w-[100px] object-cover">
+          </div>
+          <div>
+            <p class="text-white-text text-2xl font-semibold mb-2">Finnick Odair</p>
+            <p class="text-white-text/90">Victor of the 65th Hunger Games</p>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-6">
+          <div class="w-[100px] h-[100px] rounded-full overflow-hidden">
+            <img src={ImgMags.src} alt="Enobaria" class="w-[100px] rounded-full">
+          </div>
+          <div>
+            <p class="text-white-text text-2xl font-semibold mb-2">Mags Flanagan</p>
+            <p class="text-white-text/90">Victor of the 11th Hunger Games</p>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-6">
+          <div class="w-[100px] h-[100px] rounded-full overflow-hidden">
+            <img src={ImgAnnie.src} alt="Enobaria" class="w-[100px] rounded-full">
+          </div>
+          <div>
+            <p class="text-white-text text-2xl font-semibold mb-2">Annie Cresta</p>
+            <p class="text-white-text/90">Victor of the 70th Hunger Games</p>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <Footer />
+  </main>
+</Layout>
