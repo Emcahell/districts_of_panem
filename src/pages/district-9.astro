@@ -1,0 +1,73 @@
+---
+import SealDistrict from '../assets/images/d9/District_9_Seal.webp';
+import ImgLocation from '../assets/images/d9/District_9_on_Map.webp';
+import ImgIndustry from '../assets/images/d9/grain.jpg';
+import ImgFemaleVictor from '../assets/images/d9/d9_female_victor.webp';
+import ImgMaleVictor from '../assets/images/d9/d9_male_victor.webp';
+import ImgDistrict from '../assets/images/d9/district_9_industry.jpg';
+
+import Layout from "../layouts/Layout.astro";
+import Footer from '../components/Footer.astro';
+import Header from '../components/Header.astro';
+---
+
+<Layout title='District 9'>
+  <main class="px-20  overflow-hidden">
+    <Header titleHeader='District 9' />
+
+    <section class="relative w-full flex justify-center mt-42 mb-12">
+      <div>
+        <img src={SealDistrict.src} alt="District 9" class="w-[400px]">
+      </div>
+      <img src={ImgDistrict.src} alt="District 9" class="absolute -top-12 -right-24 w-[560px] opacity-40 rounded-lg -z-10">
+    </section>
+
+    <section>
+      <div class="flex items-center py-12">
+        <div>
+          <p class="text-white-text text-2xl font-bold font-family-secondary mb-4">Location</p>
+          <p class="text-white-text/90 text-lg font-family-secondary w-[70%]">District 9 is located in the central area of North America, along the region known as the Great Plains. From south to north, its territory corresponds primarily to the U.S. states of Nebraska, North Dakota, South Dakota, and the Canadian province of Manitoba. District 9 borders six districts as well as the Capitol, the most of any district: District 6 (to the northeast), District 3 (to the east), District 8 (to the south and southeast), District 2 (to the southwest), the Capitol (to the west), District 1 (to the west), and District 7 (to the northwest). District 9 is the poorest district to share a border with the Capitol.</p>
+        </div>
+        <div>
+          <img src={ImgLocation.src} alt="district location" class="w-[900px] rounded-lg">
+        </div>
+      </div>
+      <div class="w-full flex justify-between items-center py-12">
+        <div>
+          <img src={ImgIndustry.src} alt="district industry" class="w-[400px]! rounded-lg">
+        </div>
+        <div class="text-end w-full">
+          <p class="text-white-text  text-2xl font-bold font-family-secondary mb-4">Industry</p>
+          <p class="text-white-text/90 text-lg font-family-secondary pl-44">Its primary industry is grain production. It was known to have poor education and long hours in the grain fields.  Its territory correlates strongly with the district's industry as Panem's breadbasket, as the Great Plains region is known for its flat farmland and fields of wheat. It is mentioned that the district has many factories, most likely for processing the harvested grain.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="mt-26">
+      <h3 class="text-white-text font-semibold text-4xl">Victors</h3>
+      <article class="flex flex-col gap-16 mt-18">
+        <div class="flex items-center gap-6">  
+          <div class="w-[100px] h-[100px] rounded-full overflow-hidden bg-gray-800">
+            <img src={ImgFemaleVictor.src} alt="District 9 female" class="w-[100px] object-cover">
+          </div>
+          <div>
+            <p class="text-white-text text-2xl font-semibold mb-2">District 9 female</p>
+            <p class="text-white-text/90">Victor of an unknown Hunger Games</p>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-6">
+          <div class="w-[100px] h-[100px] rounded-full overflow-hidden">
+            <img src={ImgMaleVictor.src} alt="District 9 male" class="w-[100px] rounded-full">
+          </div>
+          <div>
+            <p class="text-white-text text-2xl font-semibold mb-2">District 9 male</p>
+            <p class="text-white-text/90">Victor of an unknown Hunger Games</p>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <Footer />
+  </main>
+</Layout>
