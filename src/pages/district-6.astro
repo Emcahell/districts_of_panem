@@ -1,0 +1,73 @@
+---
+import SealDistrict from '../assets/images/d6/District_6_Seal.webp';
+import ImgLocation from '../assets/images/d6/District_6_on_Map.webp';
+import ImgIndustry from '../assets/images/d6/transportation.jpg';
+import ImgFemaleVictor from '../assets/images/d6/d6_female_victor.webp';
+import ImgMaleVictor from '../assets/images/d6/d6_male_victor.webp';
+import ImgDistrict from '../assets/images/d6/district_6_hall.jpg';
+
+import Layout from "../layouts/Layout.astro";
+import Footer from '../components/Footer.astro';
+import Header from '../components/Header.astro';
+---
+
+<Layout title='District 6'>
+  <main class="px-20  overflow-hidden">
+    <Header titleHeader='District 6' />
+
+    <section class="relative w-full flex justify-center mt-42 mb-12">
+      <div>
+        <img src={SealDistrict.src} alt="District 1" class="w-[400px]">
+      </div>
+      <img src={ImgDistrict.src} alt="District 2" class="absolute top-0 -right-24 w-[560px] opacity-40 rounded-lg -z-10">
+    </section>
+
+    <section>
+      <div class="flex items-center py-12">
+        <div>
+          <p class="text-white-text text-2xl font-bold font-family-secondary mb-4">Location</p>
+          <p class="text-white-text/90 text-lg font-family-secondary w-[70%]">District 6 is located in the midwest area of North America, primarily centered in the states of Michigan and Wisconsin and the southern part of the Canadian province of Ontario. Borders District 3 (to the south and east), District 9 (to the northwest), and District 13 (to the east).</p>
+        </div>
+        <div>
+          <img src={ImgLocation.src} alt="district location" class="w-[800px] rounded-lg">
+        </div>
+      </div>
+      <div class="w-full flex justify-between items-center py-12">
+        <div>
+          <img src={ImgIndustry.src} alt="district industry" class="w-[400px]! rounded-lg">
+        </div>
+        <div class="text-end w-full">
+          <p class="text-white-text  text-2xl font-bold font-family-secondary mb-4">Industry</p>
+          <p class="text-white-text/90 text-lg font-family-secondary pl-44">The industry of District 6 is transportation. The district's industry, along with District 5, are the last ones to be revealed, only at the time the film adaptation of The Hunger Games has been announced. Nowhere in the original trilogy books suggest that District 6 provides transportation, unlike the case of District 9 being hinted from the then-unidentified wheat and bread district.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="mt-26">
+      <h3 class="text-white-text font-semibold text-4xl">Victors</h3>
+      <article class="flex flex-col gap-16 mt-18">
+        <div class="flex items-center gap-6">  
+          <div class="w-[100px] h-[100px] rounded-full overflow-hidden bg-gray-800">
+            <img src={ImgFemaleVictor.src} alt="Brutus" class="w-[100px] object-cover">
+          </div>
+          <div>
+            <p class="text-white-text text-2xl font-semibold mb-2">District 6 female</p>
+            <p class="text-white-text/90">Victor of an unspecified Hunger Games</p>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-6">
+          <div class="w-[100px] h-[100px] rounded-full overflow-hidden">
+            <img src={ImgMaleVictor.src} alt="Enobaria" class="w-[100px] rounded-full">
+          </div>
+          <div>
+            <p class="text-white-text text-2xl font-semibold mb-2">District 6 male</p>
+            <p class="text-white-text/90">Victor of an unspecified Hunger Games</p>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <Footer />
+  </main>
+</Layout>
