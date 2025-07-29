@@ -1,0 +1,23 @@
+---
+import ImgMapOfficial from '../assets/images/official-map-of-panem.webp';
+import ImgMapVintage from '../assets/images/map-of-panem.jpg';
+
+import Header from "../components/Header.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Panem Map">
+  <section class="font-family-secondary w-full">
+    <Header titleHeader="map of panem" />
+    <article class="w-full flex flex-col items-center gap-32 mt-48 pb-18">
+      <div>
+        <h1 class="text-white-text text-center text-4xl font-semibold tracking-wider mb-6">Official Map of Panem</h1>
+        <img src={ImgMapOfficial.src} alt="Official Map of Panem" class="rounded-xl">
+      </div>
+      <div>
+        <h1 class="text-white-text text-center text-4xl font-semibold tracking-wider mb-6"> Alternative Map of Panem</h1>
+        <img src={ImgMapVintage.src} alt="Official Map of Panem" class="rounded-xl">
+      </div>
+    </article>
+  </section>
+</Layout>

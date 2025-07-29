@@ -1,5 +1,5 @@
 ---
-import MapPanem from '../assets/images/map-of-panem.jpg';
+import MapPanem from '../assets/images/map-of-panem-hero.jpg';
 import ImgCapitol from '../assets/images/capitol/The_Capitol_Seal.webp';
 import ImgDistrict1 from '../assets/images/d1/District_1_Seal.webp';
 import ImgDistrict2 from '../assets/images/d2/District_2_Seal.webp';
@@ -21,17 +21,17 @@ import Layout from '../layouts/Layout.astro';
 	<main class="w-full h-screen md:px-8 overflow-hidden">
 
 		<header class="bg-background py-6 px-8 border-b-2 border-gray-800/80">
-			<div class="text-white-text/90 text-sm font-family-secondary">
-				<p>Districts of Panem by <a href="https://github.com/emcahell">Emcahell</a></p>
+			<div class="text-white-text/90 text-sm font-normal tracking-wide font-family-secondary">
+				<a href="/map_panem" class="border-2 px-4 py-2 rounded-full hover:text-background hover:bg-dorado transition">
+					View Map
+				</a>
 			</div>
-
-			<div></div>
 		</header>
 
 		<section class="relative w-full">
 			<h1 class="text-white-text font-semibold font-family-bunken-tech text-center text-4xl sm:text-6xl mt-6 md:mt-16">Districts of Panem</h1>
 			<div>
-				<img src={MapPanem.src} alt="Map of Panem" class="absolute -top-38 md:-top-45 bg-cover opacity-40 mask-b-from-14% md:mask-b-from-40% mask-l-from-85% mask-r-from-85% -z-10" >
+				<img src={MapPanem.src} alt="Map of Panem" class="absolute -top-38 md:-top-45 w-full bg-cover opacity-40 mask-b-from-14% md:mask-b-from-40% mask-l-from-85% mask-r-from-85% -z-10" >
 			</div>
 			<div class="relative flex flex-col items-center gap-6 sm:gap-8 md:gap-10 w-full mt-24 sm:mt-20 px-8">
 				<a>
