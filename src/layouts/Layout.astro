@@ -1,4 +1,6 @@
 ---
+import { ClientRouter } from 'astro:transitions';
+
 import '../styles/global.css';
 
 interface Props {
@@ -14,6 +16,7 @@ const {title} = Astro.props;
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
 		<title>Districts of Panem | {title}</title>
+		<ClientRouter />
 	</head>
 	<body class="bg-background">
 		<slot />
