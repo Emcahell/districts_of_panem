@@ -12,33 +12,33 @@ import Header from '../components/Header.astro';
 ---
 
 <Layout title='District 7'>
-  <main class="px-20  overflow-hidden">
+  <main class="px-8 md:px-20 overflow-hidden">
     <Header titleHeader='District 7' />
 
     <section class="relative w-full flex justify-center mt-42 mb-12">
       <div>
         <img src={SealDistrict.src} alt="District 7" class="w-[400px]">
       </div>
-      <img src={ImgDistrict.src} alt="District 7" class="absolute top-0 -right-24 w-[560px] opacity-40 rounded-lg -z-10">
+      <img src={ImgDistrict.src} alt="District 7" class="absolute -top-23 md:top-0 md:-right-24 md:w-[560px] opacity-20 md:opacity-40 mask-x-from-96% mask-b-from-96% rounded-lg -z-10">
     </section>
 
     <section>
-      <div class="flex items-center py-12">
+      <div class="flex flex-col md:flex-row items-center py-12">
         <div>
           <p class="text-white-text text-2xl font-bold font-family-secondary mb-4">Location</p>
-          <p class="text-white-text/90 text-lg font-family-secondary w-[70%]">District 7 is located in the Pacific Northwest, also known as Cascadia. Its territory primarily covers the Canadian provinces of British Columbia, Alberta, and Saskatchewan, as well as the U.S. states of Montana and Washington. According to this map, it is one of the few districts primarily located outside the contiguous United States, alongside District 13 and District 10. It borders District 4 (to the southwest), District 1 (to the south and southeast), and District 9 (to the east).</p>
+          <p class="text-white-text/90 text-lg font-family-secondary md:w-[70%]">District 7 is located in the Pacific Northwest, also known as Cascadia. Its territory primarily covers the Canadian provinces of British Columbia, Alberta, and Saskatchewan, as well as the U.S. states of Montana and Washington. According to this map, it is one of the few districts primarily located outside the contiguous United States, alongside District 13 and District 10. It borders District 4 (to the southwest), District 1 (to the south and southeast), and District 9 (to the east).</p>
         </div>
-        <div>
+        <div class="mt-10 md:mt-0">
           <img src={ImgLocation.src} alt="district location" class="w-[900px] rounded-lg">
         </div>
       </div>
-      <div class="w-full flex justify-between items-center py-12">
-        <div>
+      <div class="w-full flex-col-reverse md:flex-row flex justify-between items-center py-12">
+        <div class="mt-10 md:mt-0">
           <img src={ImgIndustry.src} alt="district industry" class="w-[400px]! rounded-lg">
         </div>
-        <div class="text-end w-full">
+        <div class="md:text-end w-full">
           <p class="text-white-text  text-2xl font-bold font-family-secondary mb-4">Industry</p>
-          <p class="text-white-text/90 text-lg font-family-secondary pl-44">District 7 provided lumber and paper to the Capitol. Nothing is mentioned about the typical lives of citizens. However, Katniss noted Johanna's skill with axes, and she mused that Johanna had probably been handling them since she was a toddler. If that is the case, it seems that citizens from District 7 began working in their district's lumber industry at an early age. Both Lamina and Treech also handled axes during the 10th Hunger Games, appearing to support Katniss's theory.</p>
+          <p class="text-white-text/90 text-lg font-family-secondary md:pl-44">District 7 provided lumber and paper to the Capitol. Nothing is mentioned about the typical lives of citizens. However, Katniss noted Johanna's skill with axes, and she mused that Johanna had probably been handling them since she was a toddler. If that is the case, it seems that citizens from District 7 began working in their district's lumber industry at an early age. Both Lamina and Treech also handled axes during the 10th Hunger Games, appearing to support Katniss's theory.</p>
         </div>
       </div>
     </section>

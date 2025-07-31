@@ -15,36 +15,39 @@ import Header from '../components/Header.astro';
 ---
 
 <Layout title='District 11'>
-  <main class="px-20  overflow-hidden">
+  <main class="px-8 md:px-20 overflow-hidden">
     <Header titleHeader='District 11' />
 
     <section class="relative w-full flex justify-center mt-42 mb-12">
       <div>
         <img src={SealDistrict.src} alt="District 11" class="w-[400px] drop-shadow-lg">
       </div>
-      <img src={ImgDistrict.src} alt="District 11" class="absolute -top-4 -right-24 w-[560px] opacity-40 rounded-lg -z-20">
-      <img src={ImgDistrict2.src} alt="District 11" class="absolute top-0 -left-24 w-[560px] opacity-40 rounded-lg -z-10">
-      <img src={ImgDistrict3.src} alt="District 11" class="absolute bottom-8 -left-24 w-[560px] opacity-40 rounded-lg -z-10">
-      <img src={ImgDistrict4.src} alt="District 11" class="absolute bottom-0 -right-24 w-[360px] opacity-40 rounded-lg -z-10">
+      <img src={ImgDistrict.src} alt="District 11" class="absolute -top-28 md:-top-4 md:-right-24 md:w-[560px] opacity-20 md:opacity-40 mask-x-from-96% mask-b-from-96% rounded-lg -z-20">
+
+      <img src={ImgDistrict2.src} alt="District 11" class="absolute top-0 -left-24 w-[560px] opacity-40 mask-x-from-96% mask-b-from-96% rounded-lg -z-10 hidden">
+
+      <img src={ImgDistrict3.src} alt="District 11" class="absolute bottom-8 -left-24 w-[560px] opacity-40 mask-x-from-96% mask-b-from-96% rounded-lg -z-10 hidden">
+
+      <img src={ImgDistrict4.src} alt="District 11" class="absolute top-10 md:bottom-0 md:-right-24 md:w-[360px] opacity-10 md:opacity-40 mask-x-from-96% mask-b-from-96% rounded-lg -z-10">
     </section>
 
     <section>
-      <div class="flex items-center py-12">
+      <div class="flex flex-col md:flex-row items-center py-12">
         <div>
           <p class="text-white-text text-2xl font-bold font-family-secondary mb-4">Location</p>
-          <p class="text-white-text/90 text-lg font-family-secondary w-[70%]">District 11 is located in the far southeast of North America, along the Gulf Coast. From west to east, its territory corresponds primarily to the U.S. states of Oklahoma, Arkansas, Louisiana, Mississippi, Alabama, and Georgia. District 11 borders four districts: District 12 (to the northeast), District 8 (to the north), District 10 (to the southwest), and District 2 (to the northwest).</p>
+          <p class="text-white-text/90 text-lg font-family-secondary md:w-[70%]">District 11 is located in the far southeast of North America, along the Gulf Coast. From west to east, its territory corresponds primarily to the U.S. states of Oklahoma, Arkansas, Louisiana, Mississippi, Alabama, and Georgia. District 11 borders four districts: District 12 (to the northeast), District 8 (to the north), District 10 (to the southwest), and District 2 (to the northwest).</p>
         </div>
-        <div>
+        <div class="mt-10 md:mt-0">
           <img src={ImgLocation.src} alt="district location" class="w-[800px] rounded-lg">
         </div>
       </div>
-      <div class="w-full flex justify-between items-center py-12">
-        <div>
+      <div class="w-full flex flex-col-reverse md:flex-row justify-between items-center py-12">
+        <div class="mt-10 md:mt-0">
           <img src={ImgIndustry.src} alt="district industry" class="w-[600px] rounded-lg">
         </div>
-        <div class="text-end w-full">
+        <div class="md:text-end w-full">
           <p class="text-white-text  text-2xl font-bold font-family-secondary mb-4">Industry</p>
-          <p class="text-white-text/90 text-lg font-family-secondary pl-44">District 11 specializes in agriculture. There are many tracker jacker nests in the district, causing workers to keep medical leaves on hand. In the orchards, small children are sent to high branches to pick the highest fruits. They work long hours from sunrise to sunset. During the harvest they often work until well after dark, using torchlight and night vision glasses. Crops are sent to the Capitol, and people in the district are not allowed to eat them.[2] In addition to tending the fields and orchards, District 11 is responsible for herds of dairy cattle.</p>
+          <p class="text-white-text/90 text-lg font-family-secondary md:pl-44">District 11 specializes in agriculture. There are many tracker jacker nests in the district, causing workers to keep medical leaves on hand. In the orchards, small children are sent to high branches to pick the highest fruits. They work long hours from sunrise to sunset. During the harvest they often work until well after dark, using torchlight and night vision glasses. Crops are sent to the Capitol, and people in the district are not allowed to eat them.[2] In addition to tending the fields and orchards, District 11 is responsible for herds of dairy cattle.</p>
         </div>
       </div>
     </section>

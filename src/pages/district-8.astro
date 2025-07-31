@@ -13,34 +13,34 @@ import Header from '../components/Header.astro';
 ---
 
 <Layout title='District 8'>
-  <main class="px-20  overflow-hidden">
+  <main class="px-8 md:px-20 overflow-hidden">
     <Header titleHeader='District 8' />
 
     <section class="relative w-full flex justify-center mt-42 mb-12">
       <div>
         <img src={SealDistrict.src} alt="District 8" class="w-[400px]">
       </div>
-      <img src={ImgDistrict.src} alt="District 8" class="absolute top-0 -right-24 w-[560px] opacity-40 rounded-lg -z-10">
-      <img src={ImgDistrict2.src} alt="District 8" class="absolute top-0 -left-24 w-[560px] opacity-40 rounded-lg -z-10">
+      <img src={ImgDistrict.src} alt="District 8" class="absolute -top-28 md:top-0 md:-right-24 md:w-[560px] opacity-20 md:opacity-40 mask-x-from-96% mask-b-from-96% rounded-lg -z-10">
+      <img src={ImgDistrict2.src} alt="District 8" class="absolute top-16 md:top-0 md:-left-24 md:w-[560px] opacity-20 md:opacity-40 mask-x-from-96% mask-b-from-96% rounded-lg -z-20">
     </section>
 
     <section>
-      <div class="flex items-center py-12">
+      <div class="flex flex-col md:flex-row items-center py-12">
         <div>
           <p class="text-white-text text-2xl font-bold font-family-secondary mb-4">Location</p>
-          <p class="text-white-text/90 text-lg font-family-secondary w-[70%]">District 8's territory corresponds to a long, narrow region in the northern part of southeast North America. Its territory is primarily centered on the U.S. states of Kansas, Missouri, southern Illinois, and Tennessee. District 8 borders five other districts: District 12 (to the east and northeast), District 11 (to the south), District 2 (to the west), District 9 (to the northwest), and District 3 (to the north).</p>
+          <p class="text-white-text/90 text-lg font-family-secondary md:w-[70%]">District 8's territory corresponds to a long, narrow region in the northern part of southeast North America. Its territory is primarily centered on the U.S. states of Kansas, Missouri, southern Illinois, and Tennessee. District 8 borders five other districts: District 12 (to the east and northeast), District 11 (to the south), District 2 (to the west), District 9 (to the northwest), and District 3 (to the north).</p>
         </div>
-        <div>
+        <div class="mt-10 md:mt-0">
           <img src={ImgLocation.src} alt="district location" class="w-[900px] rounded-lg">
         </div>
       </div>
-      <div class="w-full flex justify-between items-center py-12">
-        <div>
+      <div class="w-full flex flex-col-reverse md:flex-row justify-between items-center py-12">
+        <div class="mt-10 md:mt-0">
           <img src={ImgIndustry.src} alt="district industry" class="w-[400px]! rounded-lg">
         </div>
-        <div class="text-end w-full">
+        <div class="md:text-end w-full">
           <p class="text-white-text  text-2xl font-bold font-family-secondary mb-4">Industry</p>
-          <p class="text-white-text/90 text-lg font-family-secondary pl-44">Its main industry is textile production. They have at least one factory that is used for making Peacekeeper uniforms.</p>
+          <p class="text-white-text/90 text-lg font-family-secondary md:pl-44">Its main industry is textile production. They have at least one factory that is used for making Peacekeeper uniforms.</p>
         </div>
       </div>
     </section>
