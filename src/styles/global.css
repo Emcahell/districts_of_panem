@@ -26,3 +26,7 @@
 .font-family-secondary {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
+body {
+  cursor: url("/public/three-fingers.webp"), auto;
+}
