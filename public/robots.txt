@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://districts-of-panem.vercel.app/sitemap.xml

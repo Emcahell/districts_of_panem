@@ -9,7 +9,7 @@ import sitemap from '@astrojs/sitemap';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://districts-of-panem.vercel.app/',
+  site: 'https://districts-of-panem.vercel.app',
 
   vite: {
     plugins: [tailwindcss()]
