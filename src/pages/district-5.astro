@@ -13,7 +13,7 @@ import Header from '../components/Header.astro';
 
 <Layout title='District 5'>
   <main class="px-8 md:px-20 overflow-hidden">
-    <Header titleHeader='District 5' />
+    <Header titleHeader='District 5' translateKey='titleDistrict5' />
 
     <section class="relative w-full flex justify-center mt-42 mb-12">
       <div>
@@ -25,8 +25,8 @@ import Header from '../components/Header.astro';
     <section>
       <div class="flex flex-col md:flex-row items-center py-12">
         <div>
-          <p class="text-white-text text-2xl font-bold font-family-secondary mb-4">Location</p>
-          <p class="text-white-text/90 text-lg font-family-secondary md:w-[70%]">District 5 is located directly southwest of the Capitol, primarily centered in the state of Arizona and southern Utah. This geographical location makes sense, as it would have to be located in close proximity to meet the power needs of the city. Being located around the Colorado River. District 5 borders District 4 (to the northeast), District 1 (to the north), The Capitol (to the northwest), District 2 (to the east), and District 10 (to the southeast).</p>
+          <p class="text-white-text text-2xl font-bold font-family-secondary mb-4" data-translate-key="location">Location</p>
+          <p class="text-white-text/90 text-lg font-family-secondary md:w-[70%]" data-translate-key="locationD5">District 5 is located directly southwest of the Capitol, primarily centered in the state of Arizona and southern Utah. This geographical location makes sense, as it would have to be located in close proximity to meet the power needs of the city. Being located around the Colorado River. District 5 borders District 4 (to the northeast), District 1 (to the north), The Capitol (to the northwest), District 2 (to the east), and District 10 (to the southeast).</p>
         </div>
         <div class="mt-10 md:mt-0">
           <img src={ImgLocation.src} alt="district location" class="w-[800px] rounded-lg">
@@ -37,22 +37,22 @@ import Header from '../components/Header.astro';
           <img src={ImgIndustry.src} alt="district industry" class="w-[400px]! rounded-lg">
         </div>
         <div class="md:text-end w-full">
-          <p class="text-white-text text-2xl font-bold font-family-secondary mb-4">Industry</p>
-          <p class="text-white-text/90 text-lg font-family-secondary md:pl-44">Its main industry is power and utility, and the district is responsible for generating the power of the entire nation. The district's industry, along with District 6, are the last ones to be revealed. Nowhere in the original trilogy books suggest that District 5 provides power and utilities to the nation, unlike District 9 being the grain district. They are only revealed at the time the film adaptation of The Hunger Games has been announced. The hydroelectric dam attack in District 5 is a new addition to the Second Rebellion.</p>
+          <p class="text-white-text text-2xl font-bold font-family-secondary mb-4" data-translate-key="industry">Industry</p>
+          <p class="text-white-text/90 text-lg font-family-secondary md:pl-44" data-translate-key="industryD5">Its main industry is power and utility, and the district is responsible for generating the power of the entire nation. The district's industry, along with District 6, are the last ones to be revealed. Nowhere in the original trilogy books suggest that District 5 provides power and utilities to the nation, unlike District 9 being the grain district. They are only revealed at the time the film adaptation of The Hunger Games has been announced. The hydroelectric dam attack in District 5 is a new addition to the Second Rebellion.</p>
         </div>
       </div>
     </section>
 
     <section class="mt-26">
-      <h3 class="text-white-text font-semibold text-4xl">Victors</h3>
+      <h3 class="text-white-text font-semibold text-4xl" data-translate-key="victors">Victors</h3>
       <article class="flex flex-col gap-16 mt-18">
         <div class="flex items-center gap-6">  
           <div class="w-[100px] h-[100px] rounded-full overflow-hidden bg-gray-800">
             <img src={ImgFemaleVictor.src} alt="Female Victor" class="w-[100px] object-cover">
           </div>
           <div>
-            <p class="text-white-text text-2xl font-semibold mb-2">District 5 female</p>
-            <p class="text-white-text/90">Victor of an unspecified Hunger Games</p>
+            <p class="text-white-text text-2xl font-semibold mb-2" data-translate-key="victorUnspecifiedFemale5">District 5 female</p>
+            <p class="text-white-text/90" data-translate-key="unknownGames"></p>
           </div>
         </div>
 
@@ -61,8 +61,8 @@ import Header from '../components/Header.astro';
             <img src={ImgMaleVictor.src} alt="Male Victor" class="w-[100px] rounded-full">
           </div>
           <div>
-            <p class="text-white-text text-2xl font-semibold mb-2">District 5 male</p>
-            <p class="text-white-text/90">Victor of an unspecified Hunger Games</p>
+            <p class="text-white-text text-2xl font-semibold mb-2" data-translate-key="victorUnspecifiedMale5">District 5 male</p>
+            <p class="text-white-text/90" data-translate-key="unknownGames"></p>
           </div>
         </div>
       </article>

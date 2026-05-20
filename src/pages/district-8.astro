@@ -14,7 +14,7 @@ import Header from '../components/Header.astro';
 
 <Layout title='District 8'>
   <main class="px-8 md:px-20 overflow-hidden">
-    <Header titleHeader='District 8' />
+    <Header titleHeader='District 8' translateKey='titleDistrict8' />
 
     <section class="relative w-full flex justify-center mt-42 mb-12">
       <div>
@@ -27,8 +27,8 @@ import Header from '../components/Header.astro';
     <section>
       <div class="flex flex-col md:flex-row items-center py-12">
         <div>
-          <p class="text-white-text text-2xl font-bold font-family-secondary mb-4">Location</p>
-          <p class="text-white-text/90 text-lg font-family-secondary md:w-[70%]">District 8's territory corresponds to a long, narrow region in the northern part of southeast North America. Its territory is primarily centered on the U.S. states of Kansas, Missouri, southern Illinois, and Tennessee. District 8 borders five other districts: District 12 (to the east and northeast), District 11 (to the south), District 2 (to the west), District 9 (to the northwest), and District 3 (to the north).</p>
+          <p class="text-white-text text-2xl font-bold font-family-secondary mb-4" data-translate-key="location">Location</p>
+          <p class="text-white-text/90 text-lg font-family-secondary md:w-[70%]" data-translate-key="locationD8">District 8's territory corresponds to a long, narrow region in the northern part of southeast North America. Its territory is primarily centered on the U.S. states of Kansas, Missouri, southern Illinois, and Tennessee. District 8 borders five other districts: District 12 (to the east and northeast), District 11 (to the south), District 2 (to the west), District 9 (to the northwest), and District 3 (to the north).</p>
         </div>
         <div class="mt-10 md:mt-0">
           <img src={ImgLocation.src} alt="district location" class="w-[900px] rounded-lg">
@@ -39,14 +39,14 @@ import Header from '../components/Header.astro';
           <img src={ImgIndustry.src} alt="district industry" class="w-[400px]! rounded-lg">
         </div>
         <div class="md:text-end w-full">
-          <p class="text-white-text  text-2xl font-bold font-family-secondary mb-4">Industry</p>
-          <p class="text-white-text/90 text-lg font-family-secondary md:pl-44">Its main industry is textile production. They have at least one factory that is used for making Peacekeeper uniforms.</p>
+          <p class="text-white-text  text-2xl font-bold font-family-secondary mb-4" data-translate-key="industry">Industry</p>
+          <p class="text-white-text/90 text-lg font-family-secondary md:pl-44" data-translate-key="industryD8">Its main industry is textile production. They have at least one factory that is used for making Peacekeeper uniforms.</p>
         </div>
       </div>
     </section>
 
     <section class="mt-26">
-      <h3 class="text-white-text font-semibold text-4xl">Victors</h3>
+      <h3 class="text-white-text font-semibold text-4xl" data-translate-key="victors">Victors</h3>
       <article class="flex flex-col gap-16 mt-18">
         <div class="flex items-center gap-6">  
           <div class="w-[100px] h-[100px] rounded-full overflow-hidden bg-gray-800">
@@ -54,7 +54,7 @@ import Header from '../components/Header.astro';
           </div>
           <div>
             <p class="text-white-text text-2xl font-semibold mb-2">Cecelia</p>
-            <p class="text-white-text/90">Victor of an unknown Hunger Games</p>
+            <p class="text-white-text/90" data-translate-key="unknownGames">Victor of an unknown Hunger Games</p>
           </div>
         </div>
 
@@ -64,7 +64,7 @@ import Header from '../components/Header.astro';
           </div>
           <div>
             <p class="text-white-text text-2xl font-semibold mb-2">Woof</p>
-            <p class="text-white-text/90">Victor of an unknown Games</p>
+            <p class="text-white-text/90" data-translate-key="unknownGames">Victor of an unknown Games</p>
           </div>
         </div>
       </article>

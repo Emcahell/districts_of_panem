@@ -14,7 +14,7 @@ import Header from '../components/Header.astro';
 
 <Layout title='District 4'>
   <main class="px-8 md:px-20 overflow-hidden">
-    <Header titleHeader='District 4' />
+    <Header titleHeader='District 4' translateKey='titleDistrict4' />
 
     <section class="relative w-full flex justify-center mt-42 mb-12">
       <div>
@@ -26,8 +26,8 @@ import Header from '../components/Header.astro';
     <section>
       <div class="flex flex-col md:flex-row items-center py-12">
         <div>
-          <p class="text-white-text text-2xl font-bold font-family-secondary mb-4">Location</p>
-          <p class="text-white-text/90 text-lg font-family-secondary md:w-[70%]">District 4 is located on the western coast of the continent, roughly corresponding to California and Oregon, with notable territories in Nevada and southern Washington. The district borders District 7 (to the north), District 1 (to the east), and District 5 (to the southeast).</p>
+          <p class="text-white-text text-2xl font-bold font-family-secondary mb-4" data-translate-key="location">Location</p>
+          <p class="text-white-text/90 text-lg font-family-secondary md:w-[70%]" data-translate-key="locationD4">District 4 is located on the western coast of the continent, roughly corresponding to California and Oregon, with notable territories in Nevada and southern Washington. The district borders District 7 (to the north), District 1 (to the east), and District 5 (to the southeast).</p>
         </div>
         <div class="mt-10 md:mt-0">
           <img src={ImgLocation.src} alt="district location" class="w-[500px] rounded-lg">
@@ -38,14 +38,14 @@ import Header from '../components/Header.astro';
           <img src={ImgIndustry.src} alt="district industry" class="w-[400px]! rounded-lg">
         </div>
         <div class="md:text-end w-full">
-          <p class="text-white-text text-2xl font-bold font-family-secondary mb-4">Industry</p>
-          <p class="text-white-text/90 text-lg font-family-secondary md:pl-44">Its major industry is fishing, and children are trained for jobs in this industry from a young age. Not much is known about District 4's way of living aside from their specialization in fishing. This makes them adept at tying knots, weaving, and wielding weapons like spears and tridents. They can also make and use nets, improvise fish hooks, and identify edible marine life. Presumably, they also practice aquaculture.</p>
+          <p class="text-white-text text-2xl font-bold font-family-secondary mb-4" data-translate-key="industry">Industry</p>
+          <p class="text-white-text/90 text-lg font-family-secondary md:pl-44" data-translate-key="industryD4">Its major industry is fishing, and children are trained for jobs in this industry from a young age. Not much is known about District 4's way of living aside from their specialization in fishing. This makes them adept at tying knots, weaving, and wielding weapons like spears and tridents. They can also make and use nets, improvise fish hooks, and identify edible marine life. Presumably, they also practice aquaculture.</p>
         </div>
       </div>
     </section>
 
     <section class="mt-26">
-      <h3 class="text-white-text font-semibold text-4xl">Victors</h3>
+      <h3 class="text-white-text font-semibold text-4xl" data-translate-key="victors">Victors</h3>
       <article class="flex flex-col gap-16 mt-18">
         <div class="flex items-center gap-6">  
           <div class="w-[100px] h-[100px] rounded-full overflow-hidden bg-gray-800">
@@ -53,7 +53,7 @@ import Header from '../components/Header.astro';
           </div>
           <div>
             <p class="text-white-text text-2xl font-semibold mb-2">Finnick Odair</p>
-            <p class="text-white-text/90">Victor of the 65th Hunger Games</p>
+            <p class="text-white-text/90"><span data-translate-key="victorOf">Victor of the</span> 65th <span data-translate-key="hungerGames">Hunger Games</span></p>
           </div>
         </div>
 
@@ -63,7 +63,7 @@ import Header from '../components/Header.astro';
           </div>
           <div>
             <p class="text-white-text text-2xl font-semibold mb-2">Mags Flanagan</p>
-            <p class="text-white-text/90">Victor of the 11th Hunger Games</p>
+            <p class="text-white-text/90"><span data-translate-key="victorOf">Victor of the</span> 11th <span data-translate-key="hungerGames"></p>
           </div>
         </div>
 
@@ -73,7 +73,7 @@ import Header from '../components/Header.astro';
           </div>
           <div>
             <p class="text-white-text text-2xl font-semibold mb-2">Annie Cresta</p>
-            <p class="text-white-text/90">Victor of the 70th Hunger Games</p>
+            <p class="text-white-text/90"><span data-translate-key="victorOf">Victor of the</span> 70th <span data-translate-key="hungerGames"></p>
           </div>
         </div>
       </article>

@@ -15,7 +15,7 @@ import Header from '../components/Header.astro';
 
 <Layout title='District 11'>
   <main class="px-8 md:px-20 overflow-hidden">
-    <Header titleHeader='District 11' />
+    <Header titleHeader='District 11' translateKey='titleDistrict11' />
 
     <section class="relative w-full flex justify-center mt-42 mb-12">
       <div>
@@ -32,8 +32,8 @@ import Header from '../components/Header.astro';
     <section>
       <div class="flex flex-col md:flex-row items-center py-12">
         <div>
-          <p class="text-white-text text-2xl font-bold font-family-secondary mb-4">Location</p>
-          <p class="text-white-text/90 text-lg font-family-secondary md:w-[70%]">District 11 is located in the far southeast of North America, along the Gulf Coast. From west to east, its territory corresponds primarily to the U.S. states of Oklahoma, Arkansas, Louisiana, Mississippi, Alabama, and Georgia. District 11 borders four districts: District 12 (to the northeast), District 8 (to the north), District 10 (to the southwest), and District 2 (to the northwest).</p>
+          <p class="text-white-text text-2xl font-bold font-family-secondary mb-4" data-translate-key="location">Location</p>
+          <p class="text-white-text/90 text-lg font-family-secondary md:w-[70%]" data-translate-key="locationD11">District 11 is located in the far southeast of North America, along the Gulf Coast. From west to east, its territory corresponds primarily to the U.S. states of Oklahoma, Arkansas, Louisiana, Mississippi, Alabama, and Georgia. District 11 borders four districts: District 12 (to the northeast), District 8 (to the north), District 10 (to the southwest), and District 2 (to the northwest).</p>
         </div>
         <div class="mt-10 md:mt-0">
           <img src={ImgLocation.src} alt="district location" class="w-[800px] rounded-lg">
@@ -44,14 +44,14 @@ import Header from '../components/Header.astro';
           <img src={ImgIndustry.src} alt="district industry" class="w-[600px] rounded-lg">
         </div>
         <div class="md:text-end w-full">
-          <p class="text-white-text  text-2xl font-bold font-family-secondary mb-4">Industry</p>
-          <p class="text-white-text/90 text-lg font-family-secondary md:pl-44">District 11 specializes in agriculture. There are many tracker jacker nests in the district, causing workers to keep medical leaves on hand. In the orchards, small children are sent to high branches to pick the highest fruits. They work long hours from sunrise to sunset. During the harvest they often work until well after dark, using torchlight and night vision glasses. Crops are sent to the Capitol, and people in the district are not allowed to eat them. In addition to tending the fields and orchards, District 11 is responsible for herds of dairy cattle.</p>
+          <p class="text-white-text  text-2xl font-bold font-family-secondary mb-4" data-translate-key="industry">Industry</p>
+          <p class="text-white-text/90 text-lg font-family-secondary md:pl-44" data-translate-key="industryD11">District 11 specializes in agriculture. There are many tracker jacker nests in the district, causing workers to keep medical leaves on hand. In the orchards, small children are sent to high branches to pick the highest fruits. They work long hours from sunrise to sunset. During the harvest they often work until well after dark, using torchlight and night vision glasses. Crops are sent to the Capitol, and people in the district are not allowed to eat them. In addition to tending the fields and orchards, District 11 is responsible for herds of dairy cattle.</p>
         </div>
       </div>
     </section>
 
     <section class="mt-26">
-      <h3 class="text-white-text font-semibold text-4xl">Victors</h3>
+      <h3 class="text-white-text font-semibold text-4xl" data-translate-key="victors">Victors</h3>
       <article class="flex flex-col gap-16 mt-18">
         <div class="flex items-center gap-6">  
           <div class="w-[100px] h-[100px] rounded-full overflow-hidden bg-gray-800">
@@ -59,7 +59,7 @@ import Header from '../components/Header.astro';
           </div>
           <div>
             <p class="text-white-text text-2xl font-semibold mb-2">Seeder</p>
-            <p class="text-white-text/90">Victor of an unknown Games</p>
+            <p class="text-white-text/90" data-translate-key="unknownGames">Victor of an unknown Games</p>
           </div>
         </div>
 
@@ -69,7 +69,7 @@ import Header from '../components/Header.astro';
           </div>
           <div>
             <p class="text-white-text text-2xl font-semibold mb-2">Chaff</p>
-            <p class="text-white-text/90">Victor of the 45th Hunger Games</p>
+            <p class="text-white-text/90" data-translate-key="unknownGames">Victor of the 45th Hunger Games</p>
           </div>
         </div>
       </article>

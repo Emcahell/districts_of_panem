@@ -13,7 +13,7 @@ import Header from '../components/Header.astro';
 
 <Layout title='District 10'>
   <main class="px-8 md:px-20 overflow-hidden">
-    <Header titleHeader='District 10' />
+    <Header titleHeader='District 10' translateKey='titleDistrict10' />
 
     <section class="relative w-full flex justify-center mt-42 mb-12">
       <div>
@@ -25,8 +25,8 @@ import Header from '../components/Header.astro';
     <section>
       <div class="flex flex-col md:flex-row items-center py-12">
         <div>
-          <p class="text-white-text text-2xl font-bold font-family-secondary mb-4">Location</p>
-          <p class="text-white-text/90 text-lg font-family-secondary md:w-[70%]">District 10 is located in the southwest of North America. As the southernmost district of Panem, District 10's territory primarily corresponds to the western part of the U.S. state of Texas and the northern and central Mexican states of Aguascalientes, Chihuahua, Coahuila, Durango, Guanajuato, Nuevo León, San Luis Potosí, and Tamaulipas. District 10 borders three districts: District 11 (to the northeast), District 2 (to the north), and District 5 (to the northwest).</p>
+          <p class="text-white-text text-2xl font-bold font-family-secondary mb-4" data-translate-key="location">Location</p>
+          <p class="text-white-text/90 text-lg font-family-secondary md:w-[70%]" data-translate-key="locationD10">District 10 is located in the southwest of North America. As the southernmost district of Panem, District 10's territory primarily corresponds to the western part of the U.S. state of Texas and the northern and central Mexican states of Aguascalientes, Chihuahua, Coahuila, Durango, Guanajuato, Nuevo León, San Luis Potosí, and Tamaulipas. District 10 borders three districts: District 11 (to the northeast), District 2 (to the north), and District 5 (to the northwest).</p>
         </div>
         <div class="mt-10 md:mt-0">
           <img src={ImgLocation.src} alt="district location" class="w-[900px] rounded-lg">
@@ -37,22 +37,22 @@ import Header from '../components/Header.astro';
           <img src={ImgIndustry.src} alt="district industry" class="w-[400px]! rounded-lg">
         </div>
         <div class="md:text-end w-full">
-          <p class="text-white-text  text-2xl font-bold font-family-secondary mb-4">Industry</p>
-          <p class="text-white-text/90 text-lg font-family-secondary md:pl-44">Its main industry is livestock, and it provides meat to the Capitol. District 10 operated slaughterhouses, butchering hogs and cattle. Unlike District 12, 10 was one of the districts where adolescents participated in their industry, giving some tributes an advantage in the arena.</p>
+          <p class="text-white-text  text-2xl font-bold font-family-secondary mb-4" data-translate-key="industry">Industry</p>
+          <p class="text-white-text/90 text-lg font-family-secondary md:pl-44" data-translate-key="industryD10">Its main industry is livestock, and it provides meat to the Capitol. District 10 operated slaughterhouses, butchering hogs and cattle. Unlike District 12, 10 was one of the districts where adolescents participated in their industry, giving some tributes an advantage in the arena.</p>
         </div>
       </div>
     </section>
 
     <section class="mt-26">
-      <h3 class="text-white-text font-semibold text-4xl">Victors</h3>
+      <h3 class="text-white-text font-semibold text-4xl" data-translate-key="victors">Victors</h3>
       <article class="flex flex-col gap-16 mt-18">
         <div class="flex items-center gap-6">  
           <div class="w-[100px] h-[100px] rounded-full overflow-hidden bg-gray-800">
             <img src={ImgFemaleVictor.src} alt="District 10 female" class="w-[100px] object-cover">
           </div>
           <div>
-            <p class="text-white-text text-2xl font-semibold mb-2">District 10 female</p>
-            <p class="text-white-text/90">Victor of an unknown Hunger Games</p>
+            <p class="text-white-text text-2xl font-semibold mb-2" data-translate-key="victorUnspecifiedFemale10">District 10 female</p>
+            <p class="text-white-text/90" data-translate-key="unknownGames">Victor of an unknown Hunger Games</p>
           </div>
         </div>
 
@@ -61,8 +61,8 @@ import Header from '../components/Header.astro';
             <img src={ImgMaleVictor.src} alt="District 10 male" class="w-[100px] rounded-full">
           </div>
           <div>
-            <p class="text-white-text text-2xl font-semibold mb-2">District 10 male</p>
-            <p class="text-white-text/90">Victor of an unknown Hunger Games</p>
+            <p class="text-white-text text-2xl font-semibold mb-2" data-translate-key="victorUnspecifiedMale10">District 10 male</p>
+            <p class="text-white-text/90" data-translate-key="unknownGames">Victor of an unknown Hunger Games</p>
           </div>
         </div>
       </article>

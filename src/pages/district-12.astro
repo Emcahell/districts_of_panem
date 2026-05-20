@@ -18,7 +18,7 @@ import Header from "../components/Header.astro";
 
 <Layout title="District 12">
   <main class="px-8 md:px-20 overflow-hidden">
-    <Header titleHeader="District 12" />
+    <Header titleHeader="District 12" translateKey="titleDistrict12" />
 
     <section class="relative w-full flex justify-center mt-42 mb-12">
       <div>
@@ -58,11 +58,11 @@ import Header from "../components/Header.astro";
       <div class="flex flex-col md:flex-row items-center py-12">
         <div>
           <p
-            class="text-white-text text-2xl font-bold font-family-secondary mb-4">
+            class="text-white-text text-2xl font-bold font-family-secondary mb-4" data-translate-key="location">
             Location
           </p>
           <p
-            class="text-white-text/90 text-lg font-family-secondary md:w-[70%]">
+            class="text-white-text/90 text-lg font-family-secondary md:w-[70%]" data-translate-key="locationD12">
             District 12 is located in the northeast of North America. Its
             territory corresponds primarily to the U.S. states of Kentucky,
             Ohio, and West Virginia. Historically, this region is known for its
@@ -90,10 +90,10 @@ import Header from "../components/Header.astro";
         </div>
         <div class="md:text-end w-full">
           <p
-            class="text-white-text text-2xl font-bold font-family-secondary mb-4">
+            class="text-white-text text-2xl font-bold font-family-secondary mb-4" data-translate-key="industry">
             Industry
           </p>
-          <p class="text-white-text/90 text-lg font-family-secondary md:pl-44">
+          <p class="text-white-text/90 text-lg font-family-secondary md:pl-44" data-translate-key="industryD12">
             District 12's main industry is coal mining, but after the Second
             Rebellion, their main industry was converted to medicine.
           </p>
@@ -102,7 +102,7 @@ import Header from "../components/Header.astro";
     </section>
 
     <section class="mt-26">
-      <h3 class="text-white-text font-semibold text-4xl">Victors</h3>
+      <h3 class="text-white-text font-semibold text-4xl" data-translate-key="victors">Victors</h3>
       <article class="flex flex-col gap-16 mt-18">
         <div class="flex items-center gap-6">
           <div
@@ -115,7 +115,7 @@ import Header from "../components/Header.astro";
           </div>
           <div>
             <p class="text-white-text text-2xl font-semibold mb-2">Lucy Gray</p>
-            <p class="text-white-text/90">Victor of the 10th Hunger Games</p>
+            <p class="text-white-text/90"><span data-translate-key="victorOf">Victor of the</span> 10th <span data-translate-key="hungerGames"></p>
           </div>
         </div>
 
@@ -131,7 +131,7 @@ import Header from "../components/Header.astro";
             <p class="text-white-text text-2xl font-semibold mb-2">
               Haymitch Abernathy
             </p>
-            <p class="text-white-text/90">Victor of the 50th Hunger Games</p>
+            <p class="text-white-text/90"><span data-translate-key="victorOf">Victor of the</span> 50th <span data-translate-key="hungerGames"></p>
           </div>
         </div>
 
@@ -148,7 +148,7 @@ import Header from "../components/Header.astro";
             <p class="text-white-text text-2xl font-semibold mb-2">
               Katniss Everdeen
             </p>
-            <p class="text-white-text/90">Co-victor of the 74th Hunger Games</p>
+            <p class="text-white-text/90"><span data-translate-key="coVictorOf">Victor of the</span> 74th <span data-translate-key="hungerGames"></p>
           </div>
         </div>
 
@@ -165,7 +165,7 @@ import Header from "../components/Header.astro";
             <p class="text-white-text text-2xl font-semibold mb-2">
               Peeta Mellark
             </p>
-            <p class="text-white-text/90">Co-victor of the 74th Hunger Games</p>
+            <p class="text-white-text/90"><span data-translate-key="coVictorOf">Victor of the</span> 74th <span data-translate-key="hungerGames"></p>
           </div>
         </div>
       </article>
