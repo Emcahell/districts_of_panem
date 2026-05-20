@@ -1,31 +1,34 @@
 ---
 interface Props {
   titleHeader: string;
+  translateKey?: string;
 }
 
-const {titleHeader} = Astro.props;
+const {titleHeader, translateKey} = Astro.props;
 ---
 
 <header class="fixed top-0 right-0 left-0 flex justify-between items-center w-full bg-background/80 py-6 px-8 md:px-20 backdrop-blur-md border-b-2 border-gray-800/80 z-50">
 
-  <h1 class="text-dorado font-semibold font-family-bunken-tech text-xl md:text-6xl drop-shadow-lg">{titleHeader}</h1>
+  <h1 class="text-dorado font-semibold font-family-bunken-tech text-xl md:text-6xl drop-shadow-lg" data-translate-key={translateKey}>{titleHeader}</h1>
 
-  <a href="/" class="flex items-center justify-end gap-2 md:gap-4 text-white-text text-sm md:text-base hover:text-dorado font-semibold font-family-secondary w-[128px]">
-    <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="24"
-    height="24"
-    viewBox="0 0 24 24"
-    fill="none"
-    stroke="currentColor"
-    stroke-width="2"
-    stroke-linecap="round"
-    stroke-linejoin="round"
-  >
-    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-    <path d="M15 6l-6 6l6 6" />
-    </svg>
-    Back Home
-  </a>
+  <div class="flex items-center gap-4">
+    <a href="/" class="flex items-center justify-end gap-2 md:gap-4 text-white-text text-sm md:text-base hover:text-dorado font-semibold font-family-secondary">
+      <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      stroke-width="2"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+      <path d="M15 6l-6 6l6 6" />
+      </svg>
+      <span data-translate-key="backHome">Back Home</span>
+    </a>
+  </div>
 
 </header>

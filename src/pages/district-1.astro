@@ -13,7 +13,7 @@ import Header from '../components/Header.astro';
 
 <Layout title='District 1'>
   <main class="px-8 md:px-20">
-    <Header titleHeader='District 1' />
+    <Header titleHeader='District 1' translateKey='titleDistrict1' />
     
     <section class="w-full flex justify-center mt-42 mb-12">
       <div>
@@ -24,8 +24,8 @@ import Header from '../components/Header.astro';
     <section>
       <div class="flex flex-col md:flex-row items-center py-12">
         <div>
-          <p class="text-white-text text-2xl font-bold font-family-secondary mb-4">Location</p>
-          <p class="text-white-text/90 text-lg font-family-secondary md:w-[70%]">District 1 is located in western North America, to the northwest of Panem along the Rocky Mountains. Geographically, District 1's territory is primarily centered around the U.S. states of Montana, Idaho, Utah, and Wyoming. District 1 borders four districts as well as the Capitol: District 4 (to the west), District 7 (to the north), District 9 (to the east), the Capitol (to the southeast), and District 5 (to the south).</p>
+          <p class="text-white-text text-2xl font-bold font-family-secondary mb-4" data-translate-key="location">Location</p>
+          <p class="text-white-text/90 text-lg font-family-secondary md:w-[70%]" data-translate-key="locationD1">District 1 is located in western North America, to the northwest of Panem along the Rocky Mountains. Geographically, District 1's territory is primarily centered around the U.S. states of Montana, Idaho, Utah, and Wyoming. District 1 borders four districts as well as the Capitol: District 4 (to the west), District 7 (to the north), District 9 (to the east), the Capitol (to the southeast), and District 5 (to the south).</p>
         </div>
         <div class="mt-10 md:mt-0">
           <img src={ImgLocation.src} alt="district location" class="w-[800px] rounded-lg">
@@ -36,22 +36,22 @@ import Header from '../components/Header.astro';
           <img src={ImgIndustry.src} alt="district industry" class="md:w-[400px]! rounded-lg mt-10 md:mt-0">
         </div>
         <div class="md:text-end w-full">
-          <p class="text-white-text text-2xl font-bold font-family-secondary mb-4">Industry</p>
-          <p class="text-white-text/90 text-lg font-family-secondary md:pl-44">They were in charge of producing luxury items for the Capitol. Around the time of the 10th Hunger Games, they produced items such as decent liquor, makeup, and tobacco, though they were often hard to get ahold of and very expensive, which made the black market in the Capitol flourish.</p>
+          <p class="text-white-text text-2xl font-bold font-family-secondary mb-4" data-translate-key="industry">Industry</p>
+          <p class="text-white-text/90 text-lg font-family-secondary md:pl-44" data-translate-key="industryD1">They were in charge of producing luxury items for the Capitol. Around the time of the 10th Hunger Games, they produced items such as decent liquor, makeup, and tobacco, though they were often hard to get ahold of and very expensive, which made the black market in the Capitol flourish.</p>
         </div>
       </div>
     </section>
 
     <section class="mt-26">
-      <h3 class="text-white-text font-semibold text-4xl">Victors</h3>
+      <h3 class="text-white-text font-semibold text-4xl" data-translate-key="victors">Victors</h3>
       <article class="flex flex-col gap-16 mt-18">
-        <div class="flex items-center gap-6">  
+        <div class="flex items-center gap-6">
           <div class="w-[100px] h-[100px] rounded-full overflow-hidden">
             <img src={ImgPalladium.src} alt="Palladium" class="w-[100px] object-cover">
           </div>
           <div>
             <p class="text-white-text text-2xl font-semibold mb-2">Palladium Barker</p>
-            <p class="text-white-text/90">Victor of the 46th Hunger Game</p>
+            <p class="text-white-text/90"><span data-translate-key="victorOf">Victor of the</span> 46th <span data-translate-key="hungerGames">Hunger Games</span></p>
           </div>
         </div>
 
@@ -61,7 +61,7 @@ import Header from '../components/Header.astro';
           </div>
           <div>
             <p class="text-white-text text-2xl font-semibold mb-2">Gloss</p>
-            <p class="text-white-text/90">Victor of the 63rd Hunger Games</p>
+            <p class="text-white-text/90"><span data-translate-key="victorOf">Victor of the</span> 63rd <span data-translate-key="hungerGames">Hunger Games</span></p>
           </div>
         </div>
 
@@ -71,7 +71,7 @@ import Header from '../components/Header.astro';
           </div>
           <div>
             <p class="text-white-text text-2xl font-semibold mb-2">Cashmere</p>
-            <p class="text-white-text/90">Victor of the 64th Hunger Games</p>
+            <p class="text-white-text/90"><span data-translate-key="victorOf">Victor of the</span> 64th <span data-translate-key="hungerGames">Hunger Games</span></p>
           </div>
         </div>
       </article>

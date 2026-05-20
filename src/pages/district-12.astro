@@ -1,88 +1,171 @@
 ---
-import SealDistrict from '../assets/images/d12/District_12_Seal.webp';
-import ImgLocation from '../assets/images/d12/District_12_on_Map.webp';
-import ImgIndustry from '../assets/images/d12/mine_coal.png';
-import ImgFemaleVictor from '../assets/images/d12/lucy_gray.webp';
-import ImgFemaleVictor2 from '../assets/images/d12/katniss.jpg';
-import ImgMaleVictor from '../assets/images/d12/Haymitch.webp';
-import ImgDistrict from '../assets/images/d12/hall_of_justice_12.jpg';
-import ImgDistrict2 from '../assets/images/d12/Hanging_tree_TBOSAS.webp';
-import ImgDistrict3 from '../assets/images/d12/mellark_bakery.jpg';
-import ImgDistrict4 from '../assets/images/d12/Pin_de_Sinsajo.png';
+import SealDistrict from "../assets/images/d12/District_12_Seal.webp";
+import ImgLocation from "../assets/images/d12/District_12_on_Map.webp";
+import ImgIndustry from "../assets/images/d12/mine_coal.png";
+import ImgFemaleVictor from "../assets/images/d12/lucy_gray.webp";
+import ImgFemaleVictor2 from "../assets/images/d12/katniss.jpg";
+import ImgMaleVictor from "../assets/images/d12/Haymitch.webp";
+import ImgMaleVictor2 from "../assets/images/d12/peeta.jpg";
+import ImgDistrict from "../assets/images/d12/hall_of_justice_12.jpg";
+import ImgDistrict2 from "../assets/images/d12/Hanging_tree_TBOSAS.webp";
+import ImgDistrict3 from "../assets/images/d12/mellark_bakery.jpg";
+import ImgDistrict4 from "../assets/images/d12/Pin_de_Sinsajo.png";
 
 import Layout from "../layouts/Layout.astro";
-import Footer from '../components/Footer.astro';
-import Header from '../components/Header.astro';
+import Footer from "../components/Footer.astro";
+import Header from "../components/Header.astro";
 ---
 
-<Layout title='District 12'>
+<Layout title="District 12">
   <main class="px-8 md:px-20 overflow-hidden">
-    <Header titleHeader='District 12' />
+    <Header titleHeader="District 12" translateKey="titleDistrict12" />
 
     <section class="relative w-full flex justify-center mt-42 mb-12">
       <div>
-        <img src={SealDistrict.src} alt="District 12" transition:name="d12" class="w-[400px] drop-shadow-lg">
+        <img
+          src={SealDistrict.src}
+          alt="District 12"
+          transition:name="d12"
+          class="w-[400px] drop-shadow-lg"
+        />
       </div>
-      <img src={ImgDistrict.src} alt="District 12" class="absolute -top-28 md:-top-4 md:-right-24 md:w-[560px] opacity-20 md:opacity-40 mask-x-from-96% mask-b-from-96% rounded-lg -z-20">
+      <img
+        src={ImgDistrict.src}
+        alt="District 12"
+        class="absolute -top-28 md:-top-4 md:-right-24 md:w-[560px] opacity-20 md:opacity-40 mask-x-from-96% mask-b-from-96% rounded-lg -z-20"
+      />
 
-      <img src={ImgDistrict2.src} alt="District 12" class="absolute top-46 md:-top-4 -left-32 md:-left-24 md:w-[380px] opacity-20 md:opacity-40 mask-x-from-96% mask-b-from-96% rounded-lg -z-10">
+      <img
+        src={ImgDistrict2.src}
+        alt="District 12"
+        class="absolute top-46 md:-top-4 -left-32 md:-left-24 md:w-[380px] opacity-20 md:opacity-40 mask-x-from-96% mask-b-from-96% rounded-lg -z-10"
+      />
 
-      <img src={ImgDistrict3.src} alt="District 12" class="absolute top-46 md:bottom-6 left-54 md:left-0 md:w-[380px] opacity-20 md:opacity-40 mask-x-from-96% mask-b-from-96% rounded-lg -z-10">
+      <img
+        src={ImgDistrict3.src}
+        alt="District 12"
+        class="absolute top-46 md:bottom-6 left-54 md:left-0 md:w-[380px] opacity-20 md:opacity-40 mask-x-from-96% mask-b-from-96% rounded-lg -z-10"
+      />
 
-      <img src={ImgDistrict4.src} alt="District 12" class="absolute -top-22 md:top-76 -right-26 md:-right-6 md:w-[360px] opacity-20 md:opacity-80 mask-x-from-96% mask-b-from-96% rounded-lg">
+      <img
+        src={ImgDistrict4.src}
+        alt="District 12"
+        class="absolute -top-22 md:top-76 -right-26 md:-right-6 md:w-[360px] opacity-20 md:opacity-80 mask-x-from-96% mask-b-from-96% rounded-lg"
+      />
     </section>
 
     <section>
       <div class="flex flex-col md:flex-row items-center py-12">
         <div>
-          <p class="text-white-text text-2xl font-bold font-family-secondary mb-4">Location</p>
-          <p class="text-white-text/90 text-lg font-family-secondary md:w-[70%]">District 12 is located in the northeast of North America. Its territory corresponds primarily to the U.S. states of Kentucky, Ohio, and West Virginia. Historically, this region is known for its strong coal mining industry and its extensive coal beds, particularly in West Virginia and Kentucky, which ties well with the district's industry. </p>
+          <p
+            class="text-white-text text-2xl font-bold font-family-secondary mb-4" data-translate-key="location">
+            Location
+          </p>
+          <p
+            class="text-white-text/90 text-lg font-family-secondary md:w-[70%]" data-translate-key="locationD12">
+            District 12 is located in the northeast of North America. Its
+            territory corresponds primarily to the U.S. states of Kentucky,
+            Ohio, and West Virginia. Historically, this region is known for its
+            strong coal mining industry and its extensive coal beds,
+            particularly in West Virginia and Kentucky, which ties well with the
+            district's industry.
+          </p>
         </div>
         <div class="mt-10 md:mt-0">
-          <img src={ImgLocation.src} alt="district location" class="w-[800px] rounded-lg">
+          <img
+            src={ImgLocation.src}
+            alt="district location"
+            class="w-[800px] rounded-lg"
+          />
         </div>
       </div>
-      <div class="w-full flex flex-col-reverse md:flex-row justify-between items-center py-12">
+      <div
+        class="w-full flex flex-col-reverse md:flex-row justify-between items-center py-12">
         <div class="mt-10 md:mt-0">
-          <img src={ImgIndustry.src} alt="district industry" class="w-[800px] rounded-lg">
+          <img
+            src={ImgIndustry.src}
+            alt="district industry"
+            class="w-[800px] rounded-lg"
+          />
         </div>
         <div class="md:text-end w-full">
-          <p class="text-white-text  text-2xl font-bold font-family-secondary mb-4">Industry</p>
-          <p class="text-white-text/90 text-lg font-family-secondary md:pl-44">District 12's main industry is coal mining, but after the Second Rebellion, their main industry was converted to medicine.</p>
+          <p
+            class="text-white-text text-2xl font-bold font-family-secondary mb-4" data-translate-key="industry">
+            Industry
+          </p>
+          <p class="text-white-text/90 text-lg font-family-secondary md:pl-44" data-translate-key="industryD12">
+            District 12's main industry is coal mining, but after the Second
+            Rebellion, their main industry was converted to medicine.
+          </p>
         </div>
       </div>
     </section>
 
     <section class="mt-26">
-      <h3 class="text-white-text font-semibold text-4xl">Victors</h3>
+      <h3 class="text-white-text font-semibold text-4xl" data-translate-key="victors">Victors</h3>
       <article class="flex flex-col gap-16 mt-18">
-        <div class="flex items-center gap-6">  
-          <div class="w-[100px] h-[100px] rounded-full overflow-hidden bg-gray-800">
-            <img src={ImgFemaleVictor.src} alt="Lucy Gray" class="w-[100px] object-cover">
+        <div class="flex items-center gap-6">
+          <div
+            class="w-[100px] h-[100px] rounded-full overflow-hidden bg-gray-800">
+            <img
+              src={ImgFemaleVictor.src}
+              alt="Lucy Gray"
+              class="w-[100px] object-cover"
+            />
           </div>
           <div>
             <p class="text-white-text text-2xl font-semibold mb-2">Lucy Gray</p>
-            <p class="text-white-text/90">Victor of the 10th Hunger Games</p>
+            <p class="text-white-text/90"><span data-translate-key="victorOf">Victor of the</span> 10th <span data-translate-key="hungerGames"></p>
           </div>
         </div>
 
         <div class="flex items-center gap-6">
           <div class="w-[100px] h-[100px] rounded-full overflow-hidden">
-            <img src={ImgMaleVictor.src} alt="Haymitch" class="w-[100px] rounded-full">
+            <img
+              src={ImgMaleVictor.src}
+              alt="Haymitch"
+              class="w-[100px] rounded-full"
+            />
           </div>
           <div>
-            <p class="text-white-text text-2xl font-semibold mb-2">Haymitch Abernathy</p>
-            <p class="text-white-text/90">Victor of the 50th Hunger Games</p>
+            <p class="text-white-text text-2xl font-semibold mb-2">
+              Haymitch Abernathy
+            </p>
+            <p class="text-white-text/90"><span data-translate-key="victorOf">Victor of the</span> 50th <span data-translate-key="hungerGames"></p>
           </div>
         </div>
 
-        <div class="flex items-center gap-6">  
-          <div class="w-[100px] h-[100px] rounded-full overflow-hidden bg-gray-800">
-            <img src={ImgFemaleVictor2.src} alt="Katniss Everdeen" class="w-[100px] object-cover">
+        <div class="flex items-center gap-6">
+          <div
+            class="w-[100px] h-[100px] rounded-full overflow-hidden bg-gray-800">
+            <img
+              src={ImgFemaleVictor2.src}
+              alt="Katniss Everdeen"
+              class="w-[100px] object-cover"
+            />
           </div>
           <div>
-            <p class="text-white-text text-2xl font-semibold mb-2">Katniss Everdeen</p>
-            <p class="text-white-text/90">Co-victor of the 74th Hunger Games</p>
+            <p class="text-white-text text-2xl font-semibold mb-2">
+              Katniss Everdeen
+            </p>
+            <p class="text-white-text/90"><span data-translate-key="coVictorOf">Victor of the</span> 74th <span data-translate-key="hungerGames"></p>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-6">
+          <div
+            class="w-[100px] h-[100px] rounded-full overflow-hidden bg-gray-800">
+            <img
+              src={ImgMaleVictor2.src}
+              alt="Peeta Mellark"
+              class="w-[100px] object-cover"
+            />
+          </div>
+          <div>
+            <p class="text-white-text text-2xl font-semibold mb-2">
+              Peeta Mellark
+            </p>
+            <p class="text-white-text/90"><span data-translate-key="coVictorOf">Victor of the</span> 74th <span data-translate-key="hungerGames"></p>
           </div>
         </div>
       </article>

@@ -14,7 +14,7 @@ import Header from '../components/Header.astro';
 
 <Layout title='District 2'>
   <main class="px-8 md:px-20 overflow-hidden">
-    <Header titleHeader='District 2' />
+    <Header titleHeader='District 2' translateKey='titleDistrict2' />
 
     <section class="relative w-full flex justify-center mt-42 mb-12">
       <div>
@@ -26,8 +26,8 @@ import Header from '../components/Header.astro';
     <section>
       <div class="flex flex-col md:flex-row items-center py-12">
         <div>
-          <p class="text-white-text text-2xl font-bold font-family-secondary mb-4">Location</p>
-          <p class="text-white-text/90 text-lg font-family-secondary md:w-[70%]">District 2 is located directly to the south of the Capitol, primarily centered in the states of Colorado and New Mexico.</p>
+          <p class="text-white-text text-2xl font-bold font-family-secondary mb-4" data-translate-key="location">Location</p>
+          <p class="text-white-text/90 text-lg font-family-secondary md:w-[70%]" data-translate-key="locationD2">District 2 is located directly to the south of the Capitol, primarily centered in the states of Colorado and New Mexico.</p>
         </div>
         <div class="mt-10 md:mt-0">
           <img src={ImgLocation.src} alt="district location" class="w-[400px] rounded-lg">
@@ -38,22 +38,22 @@ import Header from '../components/Header.astro';
           <img src={ImgIndustry.src} alt="district industry" class="w-[400px]! rounded-lg">
         </div>
         <div class="md:text-end w-full">
-          <p class="text-white-text  text-2xl font-bold font-family-secondary mb-4">Industry</p>
-          <p class="text-white-text/90 text-lg font-family-secondary md:pl-44">They were in change of masonry and construction, with mines or stone quarries, but over time they dedicated themselves to the training and lodging of the Peacekeepers.</p>
+          <p class="text-white-text  text-2xl font-bold font-family-secondary mb-4" data-translate-key="industry">Industry</p>
+          <p class="text-white-text/90 text-lg font-family-secondary md:pl-44" data-translate-key="industryD2">They were in change of masonry and construction, with mines or stone quarries, but over time they dedicated themselves to the training and lodging of the Peacekeepers.</p>
         </div>
       </div>
     </section>
 
     <section class="mt-26">
-      <h3 class="text-white-text font-semibold text-4xl">Victors</h3>
+      <h3 class="text-white-text font-semibold text-4xl" data-translate-key="victors">Victors</h3>
       <article class="flex flex-col gap-16 mt-18">
-        <div class="flex items-center gap-6">  
+        <div class="flex items-center gap-6">
           <div class="w-[100px] h-[100px] rounded-full overflow-hidden bg-gray-800">
             <img src={ImgBrutus.src} alt="Brutus" class="w-[100px] object-center">
           </div>
           <div>
             <p class="text-white-text text-2xl font-semibold mb-2">Brutus</p>
-            <p class="text-white-text/90">Victor of an unknown Hunger Games</p>
+            <p class="text-white-text/90" data-translate-key="unknownGames"></p>
           </div>
         </div>
 
@@ -63,7 +63,7 @@ import Header from '../components/Header.astro';
           </div>
           <div>
             <p class="text-white-text text-2xl font-semibold mb-2">Enobaria</p>
-            <p class="text-white-text/90">Victor and volunteer in the 62nd Hunger Games</p>
+            <p class="text-white-text/90" data-translate-key="unknownGames"></p>
           </div>
         </div>
 
@@ -73,7 +73,7 @@ import Header from '../components/Header.astro';
           </div>
           <div>
             <p class="text-white-text text-2xl font-semibold mb-2">Lyme</p>
-            <p class="text-white-text/90">Victor of an unknown Hunger Games "a generation ago"</p>
+            <p class="text-white-text/90" data-translate-key="unknownGames"></p>
           </div>
         </div>
       </article>
