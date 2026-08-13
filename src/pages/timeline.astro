@@ -1,0 +1,1298 @@
+---
+import Header from "../components/Header.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Timeline">
+    <section class="font-family-secondary w-full">
+        <Header titleHeader="timeline" translateKey="timelineTitle" />
+
+        <div class="mt-32 md:mt-40 px-4 md:px-8 pb-20">
+            <!-- Title Section -->
+            <div class="text-center mb-12 md:mb-16">
+                <p
+                    class="text-white-text/70 text-lg md:text-xl"
+                    data-translate-key="timelineSubtitle"
+                >
+                    The major events that shaped Panem
+                </p>
+            </div>
+
+            <!-- Desktop: Horizontal Timeline -->
+            <div class="hidden lg:block">
+                <div
+                    class="relative overflow-x-auto overflow-y-hidden pb-8 pt-16 timeline-scroll"
+                >
+                    <div
+                        class="relative"
+                        style="min-width: 3660px; height: 520px;"
+                    >
+                        <!-- Main horizontal line: from first event to last event -->
+                        <div
+                            class="absolute h-0.5 bg-gradient-to-r from-dorado via-dorado to-dorado"
+                            style="top: 250px; left: 80px; width: 3320px;"
+                        >
+                        </div>
+
+                        <!-- Event 1: The Dark Days -->
+                        <div class="absolute" style="left: 80px; top: 250px;">
+                            <div
+                                class="absolute bottom-full mb-3 w-40"
+                                style="bottom: 10px;"
+                            >
+                                <div
+                                    class="bg-gray-900/90 border border-gray-700/50 rounded-xl p-2.5 backdrop-blur-sm"
+                                >
+                                    <span
+                                        class="text-dorado font-bold text-xs block mb-1"
+                                        >~3 A.A.D.</span
+                                    >
+                                    <h3
+                                        class="text-white-text font-bold text-xs mb-1"
+                                        data-translate-key="event1Title"
+                                    >
+                                        Dark Days Begin
+                                    </h3>
+                                    <p
+                                        class="text-white-text/50 text-xs leading-relaxed"
+                                        data-translate-key="event1Tooltip"
+                                    >
+                                        Civil war erupts across Panem. 13
+                                        districts rebel against the Capitol.
+                                    </p>
+                                </div>
+                            </div>
+                            <div
+                                class="w-3.5 h-3.5 rounded-full bg-dorado/70 border-4 border-background transform -translate-y-1/2 z-10 hover:scale-150 transition-transform cursor-pointer"
+                            >
+                            </div>
+                        </div>
+
+                        <!-- Event 2: Treaty of Treason -->
+                        <div class="absolute" style="left: 260px; top: 250px;">
+                            <div
+                                class="absolute top-full mt-3 w-40"
+                                style="top: 10px;"
+                            >
+                                <div
+                                    class="bg-gray-900/90 border border-gray-700/50 rounded-xl p-2.5 backdrop-blur-sm"
+                                >
+                                    <span
+                                        class="text-dorado font-bold text-xs block mb-1"
+                                        >0 A.A.D.</span
+                                    >
+                                    <h3
+                                        class="text-white-text font-bold text-xs mb-1"
+                                        data-translate-key="event2Title"
+                                    >
+                                        Treaty of Treason
+                                    </h3>
+                                    <p
+                                        class="text-white-text/50 text-xs leading-relaxed"
+                                        data-translate-key="event2Tooltip"
+                                    >
+                                        Hunger Games created as annual
+                                        punishment.
+                                    </p>
+                                </div>
+                            </div>
+                            <div
+                                class="w-3.5 h-3.5 rounded-full bg-dorado/70 border-4 border-background transform -translate-y-1/2 z-10 hover:scale-150 transition-transform cursor-pointer"
+                            >
+                            </div>
+                        </div>
+
+                        <!-- Event 3: First Hunger Games -->
+                        <div class="absolute" style="left: 440px; top: 250px;">
+                            <div
+                                class="absolute bottom-full mb-3 w-40"
+                                style="bottom: 10px;"
+                            >
+                                <div
+                                    class="bg-gray-900/90 border border-gray-700/50 rounded-xl p-2.5 backdrop-blur-sm"
+                                >
+                                    <span
+                                        class="text-dorado font-bold text-xs block mb-1"
+                                        >1 A.A.D.</span
+                                    >
+                                    <h3
+                                        class="text-white-text font-bold text-xs mb-1"
+                                        data-translate-key="event3Title"
+                                    >
+                                        First Hunger Games
+                                    </h3>
+                                    <p
+                                        class="text-white-text/50 text-xs leading-relaxed"
+                                        data-translate-key="event3Tooltip"
+                                    >
+                                        Held in the Capitol Arena. Simple games.
+                                    </p>
+                                </div>
+                            </div>
+                            <div
+                                class="w-3.5 h-3.5 rounded-full bg-dorado/70 border-4 border-background transform -translate-y-1/2 z-10 hover:scale-150 transition-transform cursor-pointer"
+                            >
+                            </div>
+                        </div>
+
+                        <!-- Event 4: 10th Hunger Games -->
+                        <div class="absolute" style="left: 620px; top: 250px;">
+                            <div
+                                class="absolute top-full mt-3 w-44"
+                                style="top: 10px;"
+                            >
+                                <div
+                                    class="bg-gray-900/90 border border-gray-700/50 rounded-xl p-2.5 backdrop-blur-sm"
+                                >
+                                    <span
+                                        class="text-dorado font-bold text-xs block mb-1"
+                                        >10 A.A.D.</span
+                                    >
+                                    <h3
+                                        class="text-white-text font-bold text-xs mb-1"
+                                        data-translate-key="event4Title"
+                                    >
+                                        10th Hunger Games
+                                    </h3>
+                                    <p
+                                        class="text-white-text/50 text-xs leading-relaxed"
+                                        data-translate-key="event4Tooltip"
+                                    >
+                                        Lucy Gray Baird wins. Mentors
+                                        introduced.
+                                    </p>
+                                </div>
+                            </div>
+                            <div
+                                class="w-3.5 h-3.5 rounded-full bg-dorado/70 border-4 border-background transform -translate-y-1/2 z-10 hover:scale-150 transition-transform cursor-pointer"
+                            >
+                            </div>
+                        </div>
+
+                        <!-- Event 5: First Quarter Quell -->
+                        <div class="absolute" style="left: 820px; top: 250px;">
+                            <div
+                                class="absolute bottom-full mb-3 w-44"
+                                style="bottom: 10px;"
+                            >
+                                <div
+                                    class="bg-gray-900/90 border border-gray-700/50 rounded-xl p-2.5 backdrop-blur-sm"
+                                >
+                                    <span
+                                        class="text-dorado font-bold text-xs block mb-1"
+                                        >25 A.A.D.</span
+                                    >
+                                    <h3
+                                        class="text-white-text font-bold text-xs mb-1"
+                                        data-translate-key="event5Title"
+                                    >
+                                        First Quarter Quell
+                                    </h3>
+                                    <p
+                                        class="text-white-text/50 text-xs leading-relaxed"
+                                        data-translate-key="event5Tooltip"
+                                    >
+                                        Tributes chosen by vote. Cornucopia
+                                        introduced.
+                                    </p>
+                                </div>
+                            </div>
+                            <div
+                                class="w-3.5 h-3.5 rounded-full bg-dorado/70 border-4 border-background transform -translate-y-1/2 z-10 hover:scale-150 transition-transform cursor-pointer"
+                            >
+                            </div>
+                        </div>
+
+                        <!-- Event 5b: Beetee Wins 34th -->
+                        <div class="absolute" style="left: 1010px; top: 250px;">
+                            <div
+                                class="absolute top-full mt-3 w-40"
+                                style="top: 10px;"
+                            >
+                                <div
+                                    class="bg-gray-900/70 border border-gray-700/30 rounded-xl p-2.5 backdrop-blur-sm"
+                                >
+                                    <span
+                                        class="text-dorado/70 font-bold text-xs block mb-1"
+                                        >34 A.A.D.</span
+                                    >
+                                    <h3
+                                        class="text-white-text/80 font-bold text-xs mb-1"
+                                        data-translate-key="event5bTitle"
+                                    >
+                                        Beetee Wins 34th
+                                    </h3>
+                                    <p
+                                        class="text-white-text/40 text-xs leading-relaxed"
+                                        data-translate-key="event5bTooltip"
+                                    >
+                                        Electrical wire strategy.
+                                    </p>
+                                </div>
+                            </div>
+                            <div
+                                class="w-2.5 h-2.5 rounded-full bg-dorado/50 border-4 border-background transform -translate-y-1/2 z-10 hover:scale-150 transition-transform cursor-pointer"
+                            >
+                            </div>
+                        </div>
+
+                        <!-- Event 5c: Wiress Wins 49th -->
+                        <div class="absolute" style="left: 1190px; top: 250px;">
+                            <div
+                                class="absolute bottom-full mb-3 w-40"
+                                style="bottom: 10px;"
+                            >
+                                <div
+                                    class="bg-gray-900/70 border border-gray-700/30 rounded-xl p-2.5 backdrop-blur-sm"
+                                >
+                                    <span
+                                        class="text-dorado/70 font-bold text-xs block mb-1"
+                                        >49 A.A.D.</span
+                                    >
+                                    <h3
+                                        class="text-white-text/80 font-bold text-xs mb-1"
+                                        data-translate-key="event5cTitle"
+                                    >
+                                        Wiress Wins 49th
+                                    </h3>
+                                    <p
+                                        class="text-white-text/40 text-xs leading-relaxed"
+                                        data-translate-key="event5cTooltip"
+                                    >
+                                        Mirror arena victory.
+                                    </p>
+                                </div>
+                            </div>
+                            <div
+                                class="w-2.5 h-2.5 rounded-full bg-dorado/50 border-4 border-background transform -translate-y-1/2 z-10 hover:scale-150 transition-transform cursor-pointer"
+                            >
+                            </div>
+                        </div>
+
+                        <!-- Event 6: Haymitch Survives (Important) -->
+                        <div class="absolute" style="left: 1380px; top: 250px;">
+                            <div
+                                class="absolute top-full mt-3 w-48"
+                                style="top: 10px;"
+                            >
+                                <div
+                                    class="bg-gray-900/95 border border-dorado/50 rounded-xl p-2.5 backdrop-blur-sm shadow-lg shadow-dorado/20"
+                                >
+                                    <span
+                                        class="text-dorado font-bold text-xs block mb-1"
+                                        >50 A.A.D.</span
+                                    >
+                                    <h3
+                                        class="text-dorado font-bold text-xs mb-1"
+                                        data-translate-key="event6Title"
+                                    >
+                                        Haymitch Survives
+                                    </h3>
+                                    <p
+                                        class="text-white-text/60 text-xs leading-relaxed"
+                                        data-translate-key="event6Tooltip"
+                                    >
+                                        Second Quarter Quell. Double tributes.
+                                    </p>
+                                </div>
+                            </div>
+                            <div
+                                class="w-4 h-4 rounded-full bg-dorado border-4 border-background transform -translate-y-1/2 z-10 hover:scale-150 transition-transform cursor-pointer shadow-lg shadow-dorado/50"
+                            >
+                            </div>
+                        </div>
+
+                        <!-- Event 7: Finnick Wins -->
+                        <div class="absolute" style="left: 1590px; top: 250px;">
+                            <div
+                                class="absolute bottom-full mb-3 w-40"
+                                style="bottom: 10px;"
+                            >
+                                <div
+                                    class="bg-gray-900/90 border border-gray-700/50 rounded-xl p-2.5 backdrop-blur-sm"
+                                >
+                                    <span
+                                        class="text-dorado font-bold text-xs block mb-1"
+                                        >65 A.A.D.</span
+                                    >
+                                    <h3
+                                        class="text-white-text font-bold text-xs mb-1"
+                                        data-translate-key="event7Title"
+                                    >
+                                        Finnick Wins
+                                    </h3>
+                                    <p
+                                        class="text-white-text/50 text-xs leading-relaxed"
+                                        data-translate-key="event7Tooltip"
+                                    >
+                                        Youngest victor at 14.
+                                    </p>
+                                </div>
+                            </div>
+                            <div
+                                class="w-3.5 h-3.5 rounded-full bg-dorado/70 border-4 border-background transform -translate-y-1/2 z-10 hover:scale-150 transition-transform cursor-pointer"
+                            >
+                            </div>
+                        </div>
+
+                        <!-- Event 7b: Annie Cresta Wins (70 A.A.D.) -->
+                        <div class="absolute" style="left: 1760px; top: 250px;">
+                            <div
+                                class="absolute top-full mt-3 w-40"
+                                style="top: 10px;"
+                            >
+                                <div
+                                    class="bg-gray-900/90 border border-gray-700/50 rounded-xl p-2.5 backdrop-blur-sm"
+                                >
+                                    <span
+                                        class="text-dorado font-bold text-xs block mb-1"
+                                        >70 A.A.D.</span
+                                    >
+                                    <h3
+                                        class="text-white-text font-bold text-xs mb-1"
+                                        data-translate-key="event8Title"
+                                    >
+                                        Annie Wins
+                                    </h3>
+                                    <p
+                                        class="text-white-text/50 text-xs leading-relaxed"
+                                        data-translate-key="event8Tooltip"
+                                    >
+                                        Katniss's father dies in mining
+                                        explosion.
+                                    </p>
+                                </div>
+                            </div>
+                            <div
+                                class="w-3.5 h-3.5 rounded-full bg-dorado/70 border-4 border-background transform -translate-y-1/2 z-10 hover:scale-150 transition-transform cursor-pointer"
+                            >
+                            </div>
+                        </div>
+
+                        <!-- Event 8: Johanna Mason Wins (71 A.A.D.) -->
+                        <div class="absolute" style="left: 1930px; top: 250px;">
+                            <div
+                                class="absolute bottom-full mb-3 w-40"
+                                style="bottom: 10px;"
+                            >
+                                <div
+                                    class="bg-gray-900/70 border border-gray-700/30 rounded-xl p-2.5 backdrop-blur-sm"
+                                >
+                                    <span
+                                        class="text-dorado/70 font-bold text-xs block mb-1"
+                                        >71 A.A.D.</span
+                                    >
+                                    <h3
+                                        class="text-white-text/80 font-bold text-xs mb-1"
+                                        data-translate-key="event7bTitle"
+                                    >
+                                        Johanna Wins
+                                    </h3>
+                                    <p
+                                        class="text-white-text/40 text-xs leading-relaxed"
+                                        data-translate-key="event7bTooltip"
+                                    >
+                                        71st Games victor. Axe skill.
+                                    </p>
+                                </div>
+                            </div>
+                            <div
+                                class="w-2.5 h-2.5 rounded-full bg-dorado/50 border-4 border-background transform -translate-y-1/2 z-10 hover:scale-150 transition-transform cursor-pointer"
+                            >
+                            </div>
+                        </div>
+
+                        <!-- Event 9b: Katniss receives Mockingjay pin (before the Games) -->
+                        <div class="absolute" style="left: 2130px; top: 250px;">
+                            <div
+                                class="absolute top-full mt-3 w-44"
+                                style="top: 10px;"
+                            >
+                                <div
+                                    class="bg-gray-900/80 border border-dorado/30 rounded-xl p-2.5 backdrop-blur-sm"
+                                >
+                                    <span
+                                        class="text-dorado font-bold text-xs block mb-1"
+                                        >74 A.A.D.</span
+                                    >
+                                    <h3
+                                        class="text-white-text font-bold text-xs mb-1"
+                                        data-translate-key="event9bTitle"
+                                    >
+                                        Mockingjay Pin
+                                    </h3>
+                                    <p
+                                        class="text-white-text/50 text-xs leading-relaxed"
+                                        data-translate-key="event9bTooltip"
+                                    >
+                                        Madge gives Katniss the pin. Symbol of
+                                        rebellion.
+                                    </p>
+                                </div>
+                            </div>
+                            <div
+                                class="w-3 h-3 rounded-full bg-dorado/60 border-4 border-background transform -translate-y-1/2 z-10 hover:scale-150 transition-transform cursor-pointer"
+                            >
+                            </div>
+                        </div>
+
+                        <!-- Event 9: 74th Hunger Games (Important) -->
+                        <div class="absolute" style="left: 2330px; top: 250px;">
+                            <div
+                                class="absolute bottom-full mb-3 w-52"
+                                style="bottom: 10px;"
+                            >
+                                <div
+                                    class="bg-gray-900/95 border border-dorado/50 rounded-xl p-2.5 backdrop-blur-sm shadow-lg shadow-dorado/20"
+                                >
+                                    <span
+                                        class="text-dorado font-bold text-xs block mb-1"
+                                        >74 A.A.D.</span
+                                    >
+                                    <h3
+                                        class="text-dorado font-bold text-xs mb-1"
+                                        data-translate-key="event9Title"
+                                    >
+                                        74th Hunger Games
+                                    </h3>
+                                    <p
+                                        class="text-white-text/60 text-xs leading-relaxed"
+                                        data-translate-key="event9Tooltip"
+                                    >
+                                        Katniss & Peeta both declared victors.
+                                    </p>
+                                </div>
+                            </div>
+                            <div
+                                class="w-5 h-5 rounded-full bg-dorado border-4 border-background transform -translate-y-1/2 z-10 hover:scale-150 transition-transform cursor-pointer shadow-lg shadow-dorado/50"
+                            >
+                            </div>
+                        </div>
+
+                        <!-- Event 10: 75th Games & Escape (Important) -->
+                        <div class="absolute" style="left: 2530px; top: 250px;">
+                            <div
+                                class="absolute top-full mt-3 w-52"
+                                style="top: 10px;"
+                            >
+                                <div
+                                    class="bg-gray-900/95 border border-dorado/50 rounded-xl p-2.5 backdrop-blur-sm shadow-lg shadow-dorado/20"
+                                >
+                                    <span
+                                        class="text-dorado font-bold text-xs block mb-1"
+                                        >75 A.A.D.</span
+                                    >
+                                    <h3
+                                        class="text-dorado font-bold text-xs mb-1"
+                                        data-translate-key="event10Title"
+                                    >
+                                        75th Games & Escape
+                                    </h3>
+                                    <p
+                                        class="text-white-text/60 text-xs leading-relaxed"
+                                        data-translate-key="event10Tooltip"
+                                    >
+                                        Rebellion begins. Katniss escapes. D12
+                                        destroyed.
+                                    </p>
+                                </div>
+                            </div>
+                            <div
+                                class="w-5 h-5 rounded-full bg-dorado border-4 border-background transform -translate-y-1/2 z-10 hover:scale-150 transition-transform cursor-pointer shadow-lg shadow-dorado/50"
+                            >
+                            </div>
+                        </div>
+
+                        <!-- Event 11: Katniss becomes Mockingjay (Important) -->
+                        <div class="absolute" style="left: 2750px; top: 250px;">
+                            <div
+                                class="absolute bottom-full mb-3 w-48"
+                                style="bottom: 10px;"
+                            >
+                                <div
+                                    class="bg-gray-900/95 border border-dorado/50 rounded-xl p-2.5 backdrop-blur-sm shadow-lg shadow-dorado/20"
+                                >
+                                    <span
+                                        class="text-dorado font-bold text-xs block mb-1"
+                                        >76 A.A.D.</span
+                                    >
+                                    <h3
+                                        class="text-dorado font-bold text-xs mb-1"
+                                        data-translate-key="event11Title"
+                                    >
+                                        Katniss = Mockingjay
+                                    </h3>
+                                    <p
+                                        class="text-white-text/60 text-xs leading-relaxed"
+                                        data-translate-key="event11Tooltip"
+                                    >
+                                        Katniss becomes the symbol of the
+                                        revolution.
+                                    </p>
+                                </div>
+                            </div>
+                            <div
+                                class="w-5 h-5 rounded-full bg-dorado border-4 border-background transform -translate-y-1/2 z-10 hover:scale-150 transition-transform cursor-pointer shadow-lg shadow-dorado/50"
+                            >
+                            </div>
+                        </div>
+
+                        <!-- Event 11b: Death of Prim -->
+                        <div class="absolute" style="left: 2940px; top: 250px;">
+                            <div
+                                class="absolute top-full mt-3 w-44"
+                                style="top: 10px;"
+                            >
+                                <div
+                                    class="bg-gray-900/80 border border-red-900/40 rounded-xl p-2.5 backdrop-blur-sm"
+                                >
+                                    <span
+                                        class="text-red-400 font-bold text-xs block mb-1"
+                                        >76 A.A.D.</span
+                                    >
+                                    <h3
+                                        class="text-white-text font-bold text-xs mb-1"
+                                        data-translate-key="event11bTitle"
+                                    >
+                                        Death of Prim
+                                    </h3>
+                                    <p
+                                        class="text-white-text/50 text-xs leading-relaxed"
+                                        data-translate-key="event11bTooltip"
+                                    >
+                                        Prim is killed in the bombing during the
+                                        final assault.
+                                    </p>
+                                </div>
+                            </div>
+                            <div
+                                class="w-4 h-4 rounded-full bg-red-600/80 border-4 border-background transform -translate-y-1/2 z-10 hover:scale-150 transition-transform cursor-pointer shadow-lg shadow-red-600/50"
+                            >
+                            </div>
+                        </div>
+
+                        <!-- Event 11c: Fall of the Capitol (Coin & Snow combined) -->
+                        <div class="absolute" style="left: 3160px; top: 250px;">
+                            <div
+                                class="absolute bottom-full mb-3 w-56"
+                                style="bottom: 10px;"
+                            >
+                                <div
+                                    class="bg-gray-900/95 border border-dorado/50 rounded-xl p-2.5 backdrop-blur-sm shadow-lg shadow-dorado/20"
+                                >
+                                    <span
+                                        class="text-dorado font-bold text-xs block mb-1"
+                                        >76 A.A.D.</span
+                                    >
+                                    <h3
+                                        class="text-dorado font-bold text-xs mb-1"
+                                        data-translate-key="event11cTitle"
+                                    >
+                                        Execution of Coin
+                                    </h3>
+                                    <p
+                                        class="text-white-text/60 text-xs leading-relaxed"
+                                        data-translate-key="event11cTooltip"
+                                    >
+                                        Katniss shoots Coin instead of Snow,
+                                        ending her rule.
+                                    </p>
+                                    <div
+                                        class="mt-1.5 pt-1.5 border-t border-dorado/20"
+                                    >
+                                        <h3
+                                            class="text-white-text font-bold text-xs mb-0.5"
+                                            data-translate-key="event11dTitle"
+                                        >
+                                            Death of Snow
+                                        </h3>
+                                        <p
+                                            class="text-white-text/50 text-xs leading-relaxed"
+                                            data-translate-key="event11dTooltip"
+                                        >
+                                            Snow dies in the chaos after Coin's
+                                            execution.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="w-5 h-5 rounded-full bg-dorado border-4 border-background transform -translate-y-1/2 z-10 hover:scale-150 transition-transform cursor-pointer shadow-lg shadow-dorado/50"
+                            >
+                            </div>
+                        </div>
+
+                        <!-- Event 12: New Republic -->
+                        <div class="absolute" style="left: 3400px; top: 250px;">
+                            <div
+                                class="absolute top-full mt-3 w-40"
+                                style="top: 10px;"
+                            >
+                                <div
+                                    class="bg-gray-900/90 border border-gray-700/50 rounded-xl p-2.5 backdrop-blur-sm"
+                                >
+                                    <span
+                                        class="text-dorado font-bold text-xs block mb-1"
+                                        >Post 76</span
+                                    >
+                                    <h3
+                                        class="text-white-text font-bold text-xs mb-1"
+                                        data-translate-key="event12Title"
+                                    >
+                                        New Republic
+                                    </h3>
+                                    <p
+                                        class="text-white-text/50 text-xs leading-relaxed"
+                                        data-translate-key="event12Tooltip"
+                                    >
+                                        Panem becomes democratic. Games
+                                        abolished.
+                                    </p>
+                                </div>
+                            </div>
+                            <div
+                                class="w-3.5 h-3.5 rounded-full bg-dorado/70 border-4 border-background transform -translate-y-1/2 z-10 hover:scale-150 transition-transform cursor-pointer"
+                            >
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                {/* Scroll Hint */}
+                <div class="text-center mt-2">
+                    <p
+                        class="text-white-text/40 text-sm font-family-secondary flex items-center justify-center gap-2"
+                    >
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="16"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            class="transform rotate-180 animate-pulse"
+                        >
+                            <path d="M5 12h14M12 5l7 7-7 7"></path>
+                        </svg>
+                        <span data-translate-key="timelineScrollHint"
+                            >Scroll to explore the timeline</span
+                        >
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="16"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            class="animate-pulse"
+                        >
+                            <path d="M5 12h14M12 5l7 7-7 7"></path>
+                        </svg>
+                    </p>
+                </div>
+            </div>
+
+            <!-- Mobile & Tablet: Vertical Timeline -->
+            <div class="lg:hidden">
+                <div class="relative">
+                    {/* Vertical line */}
+                    <div
+                        class="absolute left-6 top-3 bottom-3 w-0.5 bg-gradient-to-b from-dorado via-dorado to-dorado/30"
+                    >
+                    </div>
+
+                    <div class="space-y-3 pl-14">
+                        <!-- Event 1 -->
+                        <div class="relative">
+                            <div
+                                class="absolute -left-[46px] top-3 w-3 h-3 rounded-full bg-dorado/70 border-4 border-background z-10"
+                            >
+                            </div>
+                            <div
+                                class="bg-gray-900/80 border border-gray-700/50 rounded-xl p-2.5 hover:border-dorado/30 transition-all duration-300"
+                            >
+                                <span
+                                    class="text-dorado font-bold text-xs block mb-0.5"
+                                    >~3 A.A.D.</span
+                                >
+                                <h3
+                                    class="text-white-text font-bold text-sm mb-0.5"
+                                    data-translate-key="event1Title"
+                                >
+                                    Dark Days Begin
+                                </h3>
+                                <p
+                                    class="text-white-text/50 text-xs"
+                                    data-translate-key="event1Tooltip"
+                                >
+                                    Civil war erupts across Panem.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Event 2 -->
+                        <div class="relative">
+                            <div
+                                class="absolute -left-[46px] top-3 w-3 h-3 rounded-full bg-dorado/70 border-4 border-background z-10"
+                            >
+                            </div>
+                            <div
+                                class="bg-gray-900/80 border border-gray-700/50 rounded-xl p-2.5 hover:border-dorado/30 transition-all duration-300"
+                            >
+                                <span
+                                    class="text-dorado font-bold text-xs block mb-0.5"
+                                    >0 A.A.D.</span
+                                >
+                                <h3
+                                    class="text-white-text font-bold text-sm mb-0.5"
+                                    data-translate-key="event2Title"
+                                >
+                                    Treaty of Treason
+                                </h3>
+                                <p
+                                    class="text-white-text/50 text-xs"
+                                    data-translate-key="event2Tooltip"
+                                >
+                                    Hunger Games created as punishment.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Event 3 -->
+                        <div class="relative">
+                            <div
+                                class="absolute -left-[46px] top-3 w-3 h-3 rounded-full bg-dorado/70 border-4 border-background z-10"
+                            >
+                            </div>
+                            <div
+                                class="bg-gray-900/80 border border-gray-700/50 rounded-xl p-2.5 hover:border-dorado/30 transition-all duration-300"
+                            >
+                                <span
+                                    class="text-dorado font-bold text-xs block mb-0.5"
+                                    >1 A.A.D.</span
+                                >
+                                <h3
+                                    class="text-white-text font-bold text-sm mb-0.5"
+                                    data-translate-key="event3Title"
+                                >
+                                    First Hunger Games
+                                </h3>
+                                <p
+                                    class="text-white-text/50 text-xs"
+                                    data-translate-key="event3Tooltip"
+                                >
+                                    Held in the Capitol Arena.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Event 4 -->
+                        <div class="relative">
+                            <div
+                                class="absolute -left-[46px] top-3 w-3 h-3 rounded-full bg-dorado/70 border-4 border-background z-10"
+                            >
+                            </div>
+                            <div
+                                class="bg-gray-900/80 border border-gray-700/50 rounded-xl p-2.5 hover:border-dorado/30 transition-all duration-300"
+                            >
+                                <span
+                                    class="text-dorado font-bold text-xs block mb-0.5"
+                                    >10 A.A.D.</span
+                                >
+                                <h3
+                                    class="text-white-text font-bold text-sm mb-0.5"
+                                    data-translate-key="event4Title"
+                                >
+                                    10th Hunger Games
+                                </h3>
+                                <p
+                                    class="text-white-text/50 text-xs"
+                                    data-translate-key="event4Tooltip"
+                                >
+                                    Lucy Gray Baird wins.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Event 5 -->
+                        <div class="relative">
+                            <div
+                                class="absolute -left-[46px] top-3 w-3 h-3 rounded-full bg-dorado/70 border-4 border-background z-10"
+                            >
+                            </div>
+                            <div
+                                class="bg-gray-900/80 border border-gray-700/50 rounded-xl p-2.5 hover:border-dorado/30 transition-all duration-300"
+                            >
+                                <span
+                                    class="text-dorado font-bold text-xs block mb-0.5"
+                                    >25 A.A.D.</span
+                                >
+                                <h3
+                                    class="text-white-text font-bold text-sm mb-0.5"
+                                    data-translate-key="event5Title"
+                                >
+                                    First Quarter Quell
+                                </h3>
+                                <p
+                                    class="text-white-text/50 text-xs"
+                                    data-translate-key="event5Tooltip"
+                                >
+                                    Tributes chosen by vote.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Event 5b: Beetee -->
+                        <div class="relative">
+                            <div
+                                class="absolute -left-[44px] top-3 w-2.5 h-2.5 rounded-full bg-dorado/50 border-4 border-background z-10"
+                            >
+                            </div>
+                            <div
+                                class="bg-gray-900/60 border border-gray-700/30 rounded-xl p-2.5"
+                            >
+                                <span
+                                    class="text-dorado/60 font-bold text-xs block mb-0.5"
+                                    >34 A.A.D.</span
+                                >
+                                <h3
+                                    class="text-white-text/70 font-bold text-xs mb-0.5"
+                                    data-translate-key="event5bTitle"
+                                >
+                                    Beetee Wins 34th
+                                </h3>
+                                <p
+                                    class="text-white-text/40 text-xs"
+                                    data-translate-key="event5bTooltip"
+                                >
+                                    Electrical wire strategy.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Event 5c: Wiress -->
+                        <div class="relative">
+                            <div
+                                class="absolute -left-[44px] top-3 w-2.5 h-2.5 rounded-full bg-dorado/50 border-4 border-background z-10"
+                            >
+                            </div>
+                            <div
+                                class="bg-gray-900/60 border border-gray-700/30 rounded-xl p-2.5"
+                            >
+                                <span
+                                    class="text-dorado/60 font-bold text-xs block mb-0.5"
+                                    >49 A.A.D.</span
+                                >
+                                <h3
+                                    class="text-white-text/70 font-bold text-xs mb-0.5"
+                                    data-translate-key="event5cTitle"
+                                >
+                                    Wiress Wins 49th
+                                </h3>
+                                <p
+                                    class="text-white-text/40 text-xs"
+                                    data-translate-key="event5cTooltip"
+                                >
+                                    Mirror arena victory.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Event 6: Haymitch (Important) -->
+                        <div class="relative">
+                            <div
+                                class="absolute -left-[48px] top-3 w-4 h-4 rounded-full bg-dorado border-4 border-background z-10 shadow-lg shadow-dorado/50"
+                            >
+                            </div>
+                            <div
+                                class="bg-gray-900/80 border border-dorado/40 rounded-xl p-2.5 shadow-lg shadow-dorado/10"
+                            >
+                                <span
+                                    class="text-dorado font-bold text-xs block mb-0.5"
+                                    >50 A.A.D.</span
+                                >
+                                <h3
+                                    class="text-dorado font-bold text-sm mb-0.5"
+                                    data-translate-key="event6Title"
+                                >
+                                    Haymitch Survives
+                                </h3>
+                                <p
+                                    class="text-white-text/50 text-xs"
+                                    data-translate-key="event6Tooltip"
+                                >
+                                    Second Quarter Quell. Double tributes.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Event 7: Finnick -->
+                        <div class="relative">
+                            <div
+                                class="absolute -left-[46px] top-3 w-3 h-3 rounded-full bg-dorado/70 border-4 border-background z-10"
+                            >
+                            </div>
+                            <div
+                                class="bg-gray-900/80 border border-gray-700/50 rounded-xl p-2.5 hover:border-dorado/30 transition-all duration-300"
+                            >
+                                <span
+                                    class="text-dorado font-bold text-xs block mb-0.5"
+                                    >65 A.A.D.</span
+                                >
+                                <h3
+                                    class="text-white-text font-bold text-sm mb-0.5"
+                                    data-translate-key="event7Title"
+                                >
+                                    Finnick Wins
+                                </h3>
+                                <p
+                                    class="text-white-text/50 text-xs"
+                                    data-translate-key="event7Tooltip"
+                                >
+                                    Youngest victor at 14.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Event 7b: Annie (70 A.A.D.) -->
+                        <div class="relative">
+                            <div
+                                class="absolute -left-[46px] top-3 w-3 h-3 rounded-full bg-dorado/70 border-4 border-background z-10"
+                            >
+                            </div>
+                            <div
+                                class="bg-gray-900/80 border border-gray-700/50 rounded-xl p-2.5 hover:border-dorado/30 transition-all duration-300"
+                            >
+                                <span
+                                    class="text-dorado font-bold text-xs block mb-0.5"
+                                    >70 A.A.D.</span
+                                >
+                                <h3
+                                    class="text-white-text font-bold text-sm mb-0.5"
+                                    data-translate-key="event8Title"
+                                >
+                                    Annie Wins
+                                </h3>
+                                <p
+                                    class="text-white-text/50 text-xs"
+                                    data-translate-key="event8Tooltip"
+                                >
+                                    Katniss's father dies.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Event 8: Johanna (71 A.A.D.) -->
+                        <div class="relative">
+                            <div
+                                class="absolute -left-[44px] top-3 w-2.5 h-2.5 rounded-full bg-dorado/50 border-4 border-background z-10"
+                            >
+                            </div>
+                            <div
+                                class="bg-gray-900/60 border border-gray-700/30 rounded-xl p-2.5"
+                            >
+                                <span
+                                    class="text-dorado/60 font-bold text-xs block mb-0.5"
+                                    >71 A.A.D.</span
+                                >
+                                <h3
+                                    class="text-white-text/70 font-bold text-xs mb-0.5"
+                                    data-translate-key="event7bTitle"
+                                >
+                                    Johanna Wins
+                                </h3>
+                                <p
+                                    class="text-white-text/40 text-xs"
+                                    data-translate-key="event7bTooltip"
+                                >
+                                    71st Games victor.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Event 9b: Mockingjay Pin (before the Games) -->
+                        <div class="relative">
+                            <div
+                                class="absolute -left-[46px] top-3 w-3 h-3 rounded-full bg-dorado/60 border-4 border-background z-10"
+                            >
+                            </div>
+                            <div
+                                class="bg-gray-900/70 border border-dorado/20 rounded-xl p-2.5"
+                            >
+                                <span
+                                    class="text-dorado/80 font-bold text-xs block mb-0.5"
+                                    >74 A.A.D.</span
+                                >
+                                <h3
+                                    class="text-white-text/80 font-bold text-xs mb-0.5"
+                                    data-translate-key="event9bTitle"
+                                >
+                                    Mockingjay Pin
+                                </h3>
+                                <p
+                                    class="text-white-text/40 text-xs"
+                                    data-translate-key="event9bTooltip"
+                                >
+                                    Symbol of the rebellion.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Event 9: 74th Games (Important) -->
+                        <div class="relative">
+                            <div
+                                class="absolute -left-[48px] top-3 w-5 h-5 rounded-full bg-dorado border-4 border-background z-10 shadow-lg shadow-dorado/50"
+                            >
+                            </div>
+                            <div
+                                class="bg-gray-900/80 border border-dorado/50 rounded-xl p-2.5 shadow-lg shadow-dorado/10"
+                            >
+                                <span
+                                    class="text-dorado font-bold text-xs block mb-0.5"
+                                    >74 A.A.D.</span
+                                >
+                                <h3
+                                    class="text-dorado font-bold text-sm mb-0.5"
+                                    data-translate-key="event9Title"
+                                >
+                                    74th Hunger Games
+                                </h3>
+                                <p
+                                    class="text-white-text/50 text-xs"
+                                    data-translate-key="event9Tooltip"
+                                >
+                                    Katniss & Peeta both victors.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Event 10: 75th Games (Important) -->
+                        <div class="relative">
+                            <div
+                                class="absolute -left-[48px] top-3 w-5 h-5 rounded-full bg-dorado border-4 border-background z-10 shadow-lg shadow-dorado/50"
+                            >
+                            </div>
+                            <div
+                                class="bg-gray-900/80 border border-dorado/40 rounded-xl p-2.5 shadow-lg shadow-dorado/10"
+                            >
+                                <span
+                                    class="text-dorado font-bold text-xs block mb-0.5"
+                                    >75 A.A.D.</span
+                                >
+                                <h3
+                                    class="text-dorado font-bold text-sm mb-0.5"
+                                    data-translate-key="event10Title"
+                                >
+                                    75th Games & Escape
+                                </h3>
+                                <p
+                                    class="text-white-text/50 text-xs"
+                                    data-translate-key="event10Tooltip"
+                                >
+                                    Katniss escapes. D12 destroyed.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Event 11: Katniss = Mockingjay (Important) -->
+                        <div class="relative">
+                            <div
+                                class="absolute -left-[48px] top-3 w-5 h-5 rounded-full bg-dorado border-4 border-background z-10 shadow-lg shadow-dorado/50"
+                            >
+                            </div>
+                            <div
+                                class="bg-gray-900/80 border border-dorado/50 rounded-xl p-2.5 shadow-lg shadow-dorado/10"
+                            >
+                                <span
+                                    class="text-dorado font-bold text-xs block mb-0.5"
+                                    >76 A.A.D.</span
+                                >
+                                <h3
+                                    class="text-dorado font-bold text-sm mb-0.5"
+                                    data-translate-key="event11Title"
+                                >
+                                    Katniss = Mockingjay
+                                </h3>
+                                <p
+                                    class="text-white-text/50 text-xs"
+                                    data-translate-key="event11Tooltip"
+                                >
+                                    Symbol of the revolution.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Event 11b: Death of Prim -->
+                        <div class="relative">
+                            <div
+                                class="absolute -left-[46px] top-3 w-3.5 h-3.5 rounded-full bg-red-600/80 border-4 border-background z-10 shadow-lg shadow-red-600/50"
+                            >
+                            </div>
+                            <div
+                                class="bg-gray-900/70 border border-red-900/30 rounded-xl p-2.5"
+                            >
+                                <span
+                                    class="text-red-400 font-bold text-xs block mb-0.5"
+                                    >76 A.A.D.</span
+                                >
+                                <h3
+                                    class="text-white-text font-bold text-sm mb-0.5"
+                                    data-translate-key="event11bTitle"
+                                >
+                                    Death of Prim
+                                </h3>
+                                <p
+                                    class="text-white-text/40 text-xs"
+                                    data-translate-key="event11bTooltip"
+                                >
+                                    Prim killed in the bombing.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Event 11c: Execution of Coin + Death of Snow (combined) -->
+                        <div class="relative">
+                            <div
+                                class="absolute -left-[48px] top-3 w-5 h-5 rounded-full bg-dorado border-4 border-background z-10 shadow-lg shadow-dorado/50"
+                            >
+                            </div>
+                            <div
+                                class="bg-gray-900/80 border border-dorado/50 rounded-xl p-2.5 shadow-lg shadow-dorado/10"
+                            >
+                                <span
+                                    class="text-dorado font-bold text-xs block mb-0.5"
+                                    >76 A.A.D.</span
+                                >
+                                <h3
+                                    class="text-dorado font-bold text-sm mb-0.5"
+                                    data-translate-key="event11cTitle"
+                                >
+                                    Execution of Coin
+                                </h3>
+                                <p
+                                    class="text-white-text/50 text-xs mb-1.5"
+                                    data-translate-key="event11cTooltip"
+                                >
+                                    Katniss shoots Coin instead of Snow.
+                                </p>
+                                <div class="pt-1.5 border-t border-dorado/20">
+                                    <h3
+                                        class="text-white-text font-bold text-xs mb-0.5"
+                                        data-translate-key="event11dTitle"
+                                    >
+                                        Death of Snow
+                                    </h3>
+                                    <p
+                                        class="text-white-text/40 text-xs"
+                                        data-translate-key="event11dTooltip"
+                                    >
+                                        Snow dies in the chaos.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Event 12: New Republic -->
+                        <div class="relative">
+                            <div
+                                class="absolute -left-[46px] top-3 w-3 h-3 rounded-full bg-dorado/70 border-4 border-background z-10"
+                            >
+                            </div>
+                            <div
+                                class="bg-gray-900/80 border border-gray-700/50 rounded-xl p-2.5 hover:border-dorado/30 transition-all duration-300"
+                            >
+                                <span
+                                    class="text-dorado font-bold text-xs block mb-0.5"
+                                    >Post 76</span
+                                >
+                                <h3
+                                    class="text-white-text font-bold text-sm mb-0.5"
+                                    data-translate-key="event12Title"
+                                >
+                                    New Republic
+                                </h3>
+                                <p
+                                    class="text-white-text/50 text-xs"
+                                    data-translate-key="event12Tooltip"
+                                >
+                                    Games abolished. Freedom.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            {/* Legend */}
+            <div class="mt-12 md:mt-16 flex flex-col items-center gap-4">
+                <div
+                    class="bg-gray-900/60 border border-gray-800 rounded-xl px-6 py-4"
+                >
+                    <div
+                        class="flex items-center gap-4 text-xs text-white-text/60 flex-wrap justify-center"
+                    >
+                        <div class="flex items-center gap-1.5">
+                            <div class="w-3 h-3 rounded-full bg-dorado"></div>
+                            <span data-translate-key="legendMajor">Major</span>
+                        </div>
+                        <div class="flex items-center gap-1.5">
+                            <div class="w-2.5 h-2.5 rounded-full bg-dorado/70">
+                            </div>
+                            <span data-translate-key="legendNotable"
+                                >Notable</span
+                            >
+                        </div>
+                        <div class="flex items-center gap-1.5">
+                            <div class="w-2 h-2 rounded-full bg-dorado/50">
+                            </div>
+                            <span data-translate-key="legendMinor">Minor</span>
+                        </div>
+                        <div class="flex items-center gap-1.5">
+                            <div class="w-3 h-3 rounded-full bg-red-600/80">
+                            </div>
+                            <span data-translate-key="legendDeath">Death</span>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="bg-gray-900/40 border border-gray-800/50 rounded-xl px-6 py-3 max-w-xl"
+                >
+                    <p
+                        class="text-white-text/50 text-xs text-center leading-relaxed"
+                    >
+                        <span class="text-dorado font-semibold">A.A.D.</span> = <em
+                            >After the Dark Days</em
+                        > (Después de los Días Oscuros). Sistema de datación de Panem.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+</Layout>
+
+<style>
+    .timeline-scroll {
+        scrollbar-width: thin;
+        scrollbar-color: var(--dorado) transparent;
+    }
+
+    .timeline-scroll::-webkit-scrollbar {
+        height: 8px;
+    }
+
+    .timeline-scroll::-webkit-scrollbar-track {
+        background: rgba(255, 255, 255, 0.05);
+        border-radius: 4px;
+    }
+
+    .timeline-scroll::-webkit-scrollbar-thumb {
+        background: var(--dorado);
+        border-radius: 4px;
+    }
+
+    .timeline-scroll::-webkit-scrollbar-thumb:hover {
+        background: #f0d060;
+    }
+</style>
