@@ -1,0 +1,42 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.astro";
+import FamilyTree from "../components/FamilyTree.tsx";
+---
+
+<Layout title="Family Tree - District 12">
+    <Header titleHeader="Family Tree" translateKey="familyTreeTitle" />
+
+    <main class="w-full min-h-screen pt-32 pb-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-8">
+                <p
+                    class="text-white-text/70 text-lg font-family-secondary"
+                    data-translate-key="familyTreeSubtitle"
+                >
+                    The families connected by blood, love, and sacrifice in
+                    District 12
+                </p>
+                <p
+                    class="text-dorado/60 text-sm mt-2 font-family-secondary"
+                    data-translate-key="familyTreeInstructions"
+                >
+                    Click on a person to see their details. Scroll to zoom, drag
+                    to pan.
+                </p>
+            </div>
+
+            <FamilyTree client:load />
+
+            <div class="mt-10 text-center">
+                <p
+                    class="text-white-text/50 text-xs font-family-secondary"
+                    data-translate-key="familyTreeFooter"
+                >
+                    Based on the District 12 family trees from The Hunger Games
+                    series by Suzanne Collins
+                </p>
+            </div>
+        </div>
+    </main>
+</Layout>

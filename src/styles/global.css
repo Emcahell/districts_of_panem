@@ -30,3 +30,120 @@
 body {
   cursor: url("/public/three-fingers.webp"), auto;
 }
+
+/* ===== Family Tree (family-chart) custom styles ===== */
+
+/* Root container: dark theme matching the site */
+.f3 {
+  --female-color: #7c5c3a;
+  --male-color: #3a4a5c;
+  --genderless-color: #444;
+  --background-color: #0e0d0d;
+  --text-color: #f2f2f2;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.f3.f3-cont.ft-container {
+  background-color: transparent;
+  height: 100% !important;
+  max-height: none !important;
+  min-height: 0 !important;
+  color: var(--text-color);
+}
+
+/* Custom card inner content */
+.f3 .ft-card-inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2px;
+  padding: 10px 12px;
+  background-color: #1a1a1a;
+  border: 1px solid rgba(239, 196, 59, 0.35);
+  border-radius: 8px;
+  height: 100%;
+  width: 220px;
+  max-width: 240px;
+  box-sizing: border-box;
+  text-align: center;
+  transition: border-color 0.25s ease, box-shadow 0.25s ease, transform 0.25s ease;
+}
+
+.f3 .ft-card-name {
+  font-family: 'bunken-tech-sans-sc-wide';
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  color: #f2f2f2;
+  line-height: 1.2;
+}
+
+.f3 .ft-card-role {
+  font-size: 11px;
+  color: #efc43b;
+  opacity: 0.9;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-top: 2px;
+}
+
+.f3 .ft-card-desc {
+  font-size: 10px;
+  color: rgba(242, 242, 242, 0.65);
+  line-height: 1.35;
+  margin-top: 4px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Gender-based accent on card left edge */
+.f3 div.card-female .ft-card-inner {
+  border-left: 3px solid #c08a8a;
+}
+
+.f3 div.card-male .ft-card-inner {
+  border-left: 3px solid #8aa7c0;
+}
+
+.f3 div.card-genderless .ft-card-inner {
+  border-left: 3px solid #777;
+}
+
+/* Hover / main highlight with dorado accent */
+.f3 div.card:hover .ft-card-inner,
+.f3 div.card-main .ft-card-inner {
+  border-color: #efc43b;
+  box-shadow: 0 0 18px rgba(239, 196, 59, 0.25);
+}
+
+.f3 div.card-main .ft-card-inner {
+  outline: 2px solid #efc43b;
+}
+
+.f3 .link {
+  stroke: rgba(239, 196, 59, 0.55) !important;
+}
+
+/* Hide the default nav search box which we don't use */
+.f3 .f3-autocomplete-cont {
+  display: none;
+}
+
+/* Drag & drop cursor for the family tree area */
+.f3.f3-cont.ft-container,
+.f3.f3-cont.ft-container * {
+  cursor: grab;
+}
+
+.f3.f3-cont.ft-container:active,
+.f3.f3-cont.ft-container *:active {
+  cursor: grabbing;
+}
+
+/* Keep pointer cursor on clickable cards */
+.f3.f3-cont.ft-container .ft-card-inner,
+.f3.f3-cont.ft-container .ft-card-inner * {
+  cursor: pointer;
+}

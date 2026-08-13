@@ -180,6 +180,82 @@ export const translations: Translations = {
     event12Desc: "Freedom for Panem",
     event12Tooltip:
       "Panem transforms into a democratic republic. The Hunger Games are permanently abolished and the arenas demolished to build memorials. Katniss and Peeta start a family.",
+    viewFamilyTree: "Family Tree D12",
+    familyTreeTitle: "District 12 Family Tree",
+    familyTreeSubtitle:
+      "The families connected by blood, love, and sacrifice in District 12",
+    familyTreeInstructions:
+      "Click on a person to see their details. Scroll to zoom, drag to pan.",
+    familyTreeMainTitle: "Everdeen, Mellark & The Covey",
+    familyTreeDonnerTitle: "Donner & Undersee",
+    familyTreeHawthorneTitle: "Hawthorne",
+    familyTreeFooter:
+      "Based on the District 12 family trees from The Hunger Games series by Suzanne Collins",
+    ftRoleMusicians: "Musicians",
+    ftRoleCoveySinger: "Covey Singer",
+    ftRoleCoveyMusician: "Covey Musician",
+    ftRole10thVictor: "10th Games Victor",
+    ftRoleCoalMiner: "Coal Miner",
+    ftRoleHealer: "Healer",
+    ftRoleMockingjay: "The Mockingjay",
+    ftRoleMedicalVolunteer: "Medical Volunteer",
+    ftRoleChild: "Child",
+    ftRoleBaker: "Baker",
+    ftRoleBakerVictor: "Baker / Victor",
+    ftRole50thVictor: "50th Games Victor",
+    ftRoleMother: "Mother",
+    ftRoleBrother: "Brother",
+    ftRoleGrandmother: "Grandmother",
+    ftRoleSweetshopOwner: "Sweetshop Owner",
+    ftRole50thTribute: "50th Games Tribute",
+    ftRoleMayorsWife: "Mayor's Wife",
+    ftRoleMayor: "Mayor of District 12",
+    ftRoleMayorsDaughter: "Mayor's Daughter",
+    ftRoleSeamMother: "Seam Mother",
+    ftRoleHunter: "Hunter",
+    ftRoleLaundress: "Laundress",
+    ftCoveyEldersDesc: "Nomadic musical family of District 12.",
+    ftBarbAzureDesc: "Covey member. Probable mother of Burdock Everdeen.",
+    ftMaudeIvoryDesc: "Covey member. Probable mother of Lenore Dove.",
+    ftTamAmberDesc: "Covey member who crafted arrows for Burdock.",
+    ftLucyGrayDesc: "Victor of the 10th Hunger Games and Covey member.",
+    ftClerkCarmineDesc:
+      "Covey member, guardian of Lenore Dove. Distant family of the Baird cousins.",
+    ftBillyTaupeDesc:
+      "Covey member and brother of Clerk Carmine. Former love of Lucy Gray.",
+    ftBurdockDesc: "Katniss's father, died in a mining accident.",
+    ftAsteridDesc: "Katniss's mother, from the merchant class.",
+    ftKatnissDesc: "Victor of the 74th Hunger Games and face of the rebellion.",
+    ftPrimroseDesc:
+      "Katniss's younger sister, killed during the Second Rebellion.",
+    ftKatnissSonDesc: "Katniss and Peeta's son.",
+    ftKatnissDaughterDesc: "Katniss and Peeta's daughter.",
+    ftOthoDesc: "Owner of the Mellark Bakery, Peeta's father.",
+    ftMrsMellarkDesc: "Peeta's mother, known for her cruelty.",
+    ftPeetaDesc: "Victor of the 74th Hunger Games. Married Katniss.",
+    ftPeetaBrotherDesc: "Peeta's unnamed older brother.",
+    ftLenoreDoveDesc: "Haymitch's love, cousin of Burdock Everdeen.",
+    ftPaAbernathyDesc: "Haymitch's father, died in a mining fire.",
+    ftWillamaeDesc:
+      "Haymitch's mother, known as Ma. Raised her sons alone after Pa's death.",
+    ftSidDesc: "Haymitch's younger brother, who loved the stars.",
+    ftHaymitchDesc:
+      "Victor of the 50th Hunger Games. Mentor to Katniss and Peeta.",
+    ftDonnerGrandmotherDesc:
+      "Maysilee's grandmother, original owner of the mockingjay pin.",
+    ftMrDonnerDesc: "Owner of the Donner Sweetshop in District 12.",
+    ftMrsDonnerDesc: "Co-owner of the Donner Sweetshop.",
+    ftMaysileeDesc:
+      "Tribute in the 50th Hunger Games. Owned the mockingjay pin, later passed to her niece Madge.",
+    ftMerrileeDesc:
+      "Maysilee's sister. Married Mayor Undersee, mother of Madge.",
+    ftMayorUnderseeDesc: "Mayor of District 12.",
+    ftMadgeDesc:
+      "Gave Katniss the mockingjay pin before the 74th Hunger Games.",
+    ftHawthorneSrDesc: "Gale's father, died in the same accident as Burdock.",
+    ftHawthorneMrsDesc: "Gale's mother.",
+    ftGaleDesc: "Katniss's best friend and hunting partner.",
+    ftHazelleDesc: "Gale's sister, works as a laundress.",
   },
   es: {
     viewMap: "Ver Mapa",
@@ -356,5 +432,84 @@ export const translations: Translations = {
     event12Desc: "Libertad para Panem",
     event12Tooltip:
       "Panem se transforma en una república democrática. Los Juegos del Hambre son abolidos permanentemente y las arenas demolidas para construir monumentos conmemorativos. Katniss y Peeta forman una familia.",
+    viewFamilyTree: "Árbol Familiar D12",
+    familyTreeTitle: "Árbol Familiar Distrito 12",
+    familyTreeSubtitle:
+      "Las familias conectadas por sangre, amor y sacrificio en el Distrito 12",
+    familyTreeInstructions:
+      "Haz clic en una persona para ver sus detalles. Desplaza para hacer zoom, arrastra para mover.",
+    familyTreeMainTitle: "Everdeen, Mellark y la Covey",
+    familyTreeDonnerTitle: "Donner y Undersee",
+    familyTreeHawthorneTitle: "Hawthorne",
+    familyTreeFooter:
+      "Basado en los árboles familiares del Distrito 12 de la saga Los Juegos del Hambre de Suzanne Collins",
+    ftRoleMusicians: "Músicos",
+    ftRoleCoveySinger: "Cantante de la Covey",
+    ftRoleCoveyMusician: "Músico de la Covey",
+    ftRole10thVictor: "Vencedor de los 10mos Juegos",
+    ftRoleCoalMiner: "Minero de carbón",
+    ftRoleHealer: "Curandera",
+    ftRoleMockingjay: "El Sinsajo",
+    ftRoleMedicalVolunteer: "Voluntaria médica",
+    ftRoleChild: "Hijo/a",
+    ftRoleBaker: "Panadero",
+    ftRoleBakerVictor: "Panadero / Vencedor",
+    ftRole50thVictor: "Vencedor de los 50mos Juegos",
+    ftRoleMother: "Madre",
+    ftRoleBrother: "Hermano",
+    ftRoleGrandmother: "Abuela",
+    ftRoleSweetshopOwner: "Dueño de la Dulcería",
+    ftRole50thTribute: "Tributo de los 50mos Juegos",
+    ftRoleMayorsWife: "Esposa del Alcalde",
+    ftRoleMayor: "Alcalde del Distrito 12",
+    ftRoleMayorsDaughter: "Hija del Alcalde",
+    ftRoleSeamMother: "Madre del Seam",
+    ftRoleHunter: "Cazador",
+    ftRoleLaundress: "Lavandera",
+    ftCoveyEldersDesc: "Familia musical nómada del Distrito 12.",
+    ftBarbAzureDesc: "Miembro de la Covey. Posible madre de Burdock Everdeen.",
+    ftMaudeIvoryDesc: "Miembro de la Covey. Posible madre de Lenore Dove.",
+    ftTamAmberDesc: "Miembro de la Covey que fabricaba flechas para Burdock.",
+    ftLucyGrayDesc:
+      "Vencedora de los 10mos Juegos del Hambre y miembro de la Covey.",
+    ftClerkCarmineDesc:
+      "Miembro de la Covey, tutor de Lenore Dove. Familia lejana de los primos Baird.",
+    ftBillyTaupeDesc:
+      "Miembro de la Covey y hermano de Clerk Carmine. Ex-amor de Lucy Gray.",
+    ftBurdockDesc: "Padre de Katniss, murió en un accidente minero.",
+    ftAsteridDesc: "Madre de Katniss, de la clase mercantil.",
+    ftKatnissDesc:
+      "Vencedora de los 74tos Juegos del Hambre y rostro de la rebelión.",
+    ftPrimroseDesc:
+      "Hermana menor de Katniss, asesinada durante la Segunda Rebelión.",
+    ftKatnissSonDesc: "Hijo de Katniss y Peeta.",
+    ftKatnissDaughterDesc: "Hija de Katniss y Peeta.",
+    ftOthoDesc: "Dueño de la Panadería Mellark, padre de Peeta.",
+    ftMrsMellarkDesc: "Madre de Peeta, conocida por su crueldad.",
+    ftPeetaDesc: "Vencedor de los 74tos Juegos del Hambre. Casado con Katniss.",
+    ftPeetaBrotherDesc: "Hermano mayor de Peeta sin nombre.",
+    ftLenoreDoveDesc: "El amor de Haymitch, prima de Burdock Everdeen.",
+    ftPaAbernathyDesc: "Padre de Haymitch, murió en un incendio minero.",
+    ftWillamaeDesc:
+      "Madre de Haymitch, conocida como Ma. Crió sola a sus hijos tras la muerte de Pa.",
+    ftSidDesc: "Hermano menor de Haymitch, que amaba las estrellas.",
+    ftHaymitchDesc:
+      "Vencedor de los 50mos Juegos del Hambre. Mentor de Katniss y Peeta.",
+    ftDonnerGrandmotherDesc:
+      "Abuela de Maysilee, dueña original del pin del sinsajo.",
+    ftMrDonnerDesc: "Dueño de la Dulcería Donner en el Distrito 12.",
+    ftMrsDonnerDesc: "Co-dueña de la Dulcería Donner.",
+    ftMaysileeDesc:
+      "Tributo de los 50mos Juegos del Hambre. Dueña del pin del sinsajo, luego pasado a su sobrina Madge.",
+    ftMerrileeDesc:
+      "Hermana de Maysilee. Casada con el Alcalde Undersee, madre de Madge.",
+    ftMayorUnderseeDesc: "Alcalde del Distrito 12.",
+    ftMadgeDesc:
+      "Le dio a Katniss el pin del sinsajo antes de los 74tos Juegos del Hambre.",
+    ftHawthorneSrDesc:
+      "Padre de Gale, murió en el mismo accidente que Burdock.",
+    ftHawthorneMrsDesc: "Madre de Gale.",
+    ftGaleDesc: "Mejor amigo y compañero de caza de Katniss.",
+    ftHazelleDesc: "Hermana de Gale, trabaja como lavandera.",
   },
 };
