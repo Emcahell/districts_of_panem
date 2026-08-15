@@ -2,6 +2,7 @@
 import Layout from "../layouts/Layout.astro";
 import Header from "../components/Header.astro";
 import FamilyTree from "../components/FamilyTree.tsx";
+import PageScrollButton from "../components/PageScrollButton.tsx";
 ---
 
 <Layout title="Family Tree - District 12">
@@ -27,6 +28,8 @@ import FamilyTree from "../components/FamilyTree.tsx";
             </div>
 
             <FamilyTree client:load />
+
+            <PageScrollButton client:load />
 
             <div class="mt-10 text-center">
                 <p
