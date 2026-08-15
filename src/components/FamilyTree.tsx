@@ -455,8 +455,23 @@ function t(lang: Language, key: string | undefined): string {
   return translations[lang]?.[key as TranslationKey] ?? translations.en[key as TranslationKey] ?? "";
 }
 
-function renderChart(container: HTMLDivElement, data: FamilyMember[], mainId: string | undefined, lang: Language) {
+function renderChart(
+  container: HTMLDivElement,
+  data: FamilyMember[],
+  mainId: string | undefined,
+  lang: Language,
+  isCurrent: () => boolean
+): Promise<any> {
   return import("family-chart").then((f3) => {
+    // If a newer render superseded this one while the module was loading,
+    // skip creating the chart so we don't end up with duplicate overlays
+    // stacked on top of each other (which block pointer events).
+    if (!isCurrent()) {
+      return null;
+    }
+    // Clear any leftover DOM from a previous/superseded chart before creating.
+    container.innerHTML = "";
+
     const f3Chart = f3.createChart(container, data as any)
       .setCardXSpacing(380)
       .setCardYSpacing(220)
@@ -548,12 +563,22 @@ function FamilyChart({ data, mainId, heightClass = "h-[420px]", lang }: FamilyCh
 
     container.innerHTML = "";
 
-    renderChart(container, data, mainId, lang).catch((err) => {
-      console.error("Family chart failed to render:", err);
-      if (!disposed) {
-        container.innerHTML = `<div class="text-white-text/70 p-6 font-family-secondary">Error rendering family tree.</div>`;
-      }
-    });
+    // `isCurrent` lets renderChart skip stale async renders that were
+    // superseded while the dynamic import was still loading (this used to
+    // create a duplicate chart overlay that blocked clicks on first visit).
+    renderChart(container, data, mainId, lang, () => !disposed)
+      .then((chart) => {
+        if (disposed && chart) {
+          // A newer render took over; drop the DOM this stale render created.
+          container.innerHTML = "";
+        }
+      })
+      .catch((err) => {
+        console.error("Family chart failed to render:", err);
+        if (!disposed) {
+          container.innerHTML = `<div class="text-white-text/70 p-6 font-family-secondary">Error rendering family tree.</div>`;
+        }
+      });
 
     return () => {
       disposed = true;
