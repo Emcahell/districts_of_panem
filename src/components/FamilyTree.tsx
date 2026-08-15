@@ -466,7 +466,9 @@ function renderChart(container: HTMLDivElement, data: FamilyMember[], mainId: st
       (f3Chart as any).updateMainId?.(mainId);
     }
 
-    f3Chart.setCardHtml().setCardInnerHtmlCreator((d: any) => {
+    const cardHtml = f3Chart.setCardHtml();
+
+    cardHtml.setCardInnerHtmlCreator((d: any) => {
       const person = d.data.data;
       const first = person["first name"] || "";
       const last = person["last name"] || "";
@@ -479,6 +481,49 @@ function renderChart(container: HTMLDivElement, data: FamilyMember[], mainId: st
           ${desc ? `<div class="ft-card-desc">${desc}</div>` : ""}
         </div>
       `;
+    });
+
+    // On touch devices, the d3-zoom gesture used for pan/zoom consumes the
+    // tap and the browser never fires the synthesized `click` on the card, so
+    // the default on-card click (switch main person) never runs. Detect taps
+    // manually with touchstart/touchend (with a small movement threshold so
+    // panning still works) and trigger the same update a click would.
+    cardHtml.setOnCardUpdate?.(function (this: any, d: any) {
+      const cardEl = this.querySelector?.(".card");
+      if (!cardEl) return;
+
+      let startX = 0;
+      let startY = 0;
+      let startTime = 0;
+
+      cardEl.addEventListener(
+        "touchstart",
+        (e: TouchEvent) => {
+          const touch = e.touches[0];
+          if (!touch) return;
+          startX = touch.clientX;
+          startY = touch.clientY;
+          startTime = Date.now();
+        },
+        { passive: true }
+      );
+
+      cardEl.addEventListener(
+        "touchend",
+        (e: TouchEvent) => {
+          const touch = e.changedTouches[0];
+          if (!touch) return;
+          const elapsed = Date.now() - startTime;
+          const distance = Math.hypot(touch.clientX - startX, touch.clientY - startY);
+          // Only treat as a tap when there was no meaningful drag
+          if (elapsed < 400 && distance < 10) {
+            e.preventDefault(); // prevent the ghost click that could hit a wrong card
+            f3Chart.updateMainId(d.data.id);
+            f3Chart.updateTree({});
+          }
+        },
+        { passive: false }
+      );
     });
 
     f3Chart.updateTree({ initial: true });
